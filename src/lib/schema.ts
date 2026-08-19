@@ -23,7 +23,7 @@ export interface BuildGraphOptions {
 
 export function buildGraph(opts: BuildGraphOptions) {
   const site = SITE.url;
-  // Reviews and articles are produced by the Wealth Bookshelf team, not a
+  // Reviews and articles are produced by the Capital Readers team, not a
   // named individual, so authorship is attributed to the Organization
   // rather than a fabricated Person.
   const author = { '@id': `${site}/#org` };

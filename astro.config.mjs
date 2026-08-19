@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://wealthbookshelf.com',
+  site: 'https://capitalreaders.com',
   output: 'static',
   integrations: [
     sitemap({
