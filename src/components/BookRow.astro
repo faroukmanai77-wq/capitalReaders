@@ -1,5 +1,6 @@
 ---
 import { amazonUrl, bookshopUrl, coverAlt, gradientFor, rankLabel } from '../lib/affiliate';
+import { SITE } from '../config';
 
 interface Book {
   title: string;
@@ -83,7 +84,9 @@ const bookshop = bookshopUrl(book.title, book.bookshopUrl);
 
     <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap">
       <a href={amazon} target="_blank" rel="sponsored noopener" class="buy-btn">Buy on Amazon</a>
-      <a href={bookshop} target="_blank" rel="sponsored noopener" class="buy-btn-outline">Bookshop.org</a>
+      {SITE.showBookshop && (
+        <a href={bookshop} target="_blank" rel="sponsored noopener" class="buy-btn-outline">Bookshop.org</a>
+      )}
       <span style="font-size:11.5px; color:var(--ink-soft); font-style:italic">{book.formats}</span>
     </div>
   </div>

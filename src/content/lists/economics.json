@@ -14,10 +14,22 @@
   "methodTitle": "Why history, and not a textbook",
   "methodBody": "An introductory economics textbook teaches you models; these books teach you what happened, which is the faster route to reading a central bank statement with any confidence. The list is deliberately argumentative rather than neutral: Graeber and Piketty are contested by serious economists, and both are included with that noted, because a reader who has followed a real disagreement understands more than one who has memorised a consensus. Kindleberger sits in the middle as the most practically useful — it is a field guide to the bubble you are currently living in.",
   "faq": [
-    { "q": "Which of these should I read first?", "a": "Manias, Panics, and Crashes. It is the shortest route to a working model of credit cycles, and it makes the other four easier to place." },
-    { "q": "Do I need an economics background?", "a": "No, with one exception: This Time Is Different is data-heavy and assumes comfort with charts. The other four are written for general readers." },
-    { "q": "Is Piketty's argument still accepted?", "a": "Parts of it are contested, particularly the r > g formulation and some of the wealth-tax conclusions. The historical data work is widely respected. Read it as the opening of a debate, not the end of one." },
-    { "q": "Where is Keynes, or Friedman?", "a": "Both are primary sources worth reading eventually, but neither is the most efficient way to acquire a first model of the economy. This list optimises for the reader who wants to understand the news, not the history of the discipline." }
+    {
+      "q": "Which of these should I read first?",
+      "a": "Manias, Panics, and Crashes. It is the shortest route to a working model of credit cycles, and it makes the other four easier to place."
+    },
+    {
+      "q": "Do I need an economics background?",
+      "a": "No, with one exception: This Time Is Different is data-heavy and assumes comfort with charts. The other four are written for general readers."
+    },
+    {
+      "q": "Is Piketty's argument still accepted?",
+      "a": "Parts of it are contested, particularly the r > g formulation and some of the wealth-tax conclusions. The historical data work is widely respected. Read it as the opening of a debate, not the end of one."
+    },
+    {
+      "q": "Where is Keynes, or Friedman?",
+      "a": "Both are primary sources worth reading eventually, but neither is the most efficient way to acquire a first model of the economy. This list optimises for the reader who wants to understand the news, not the history of the discipline."
+    }
   ],
   "updated": "2026-08-19",
   "seo": {
@@ -25,10 +37,65 @@
     "description": "Five books on credit, cycles, crashes, and inequality — the model you need to read financial news usefully."
   },
   "books": [
-    { "rank": 1, "title": "The Wealth of Nations", "author": "Adam Smith", "published": "1776", "blurb": "The founding text, and far less doctrinaire than the people who quote it. Smith on the division of labour, and on the self-interest of merchants, is still the sharpest introduction to how prices coordinate strangers.", "keyIdea": "Prices coordinate the actions of strangers who have no knowledge of each other.", "bestFor": "You want to know what Smith actually wrote rather than what he is quoted as writing.", "skipIf": "You want a short read — get an abridged edition instead.", "formats": "Hardcover · Paperback · Kindle" },
-    { "rank": 2, "title": "Debt: The First 5,000 Years", "author": "David Graeber", "published": "2011", "blurb": "An anthropologist's history of credit that upends the textbook story of money emerging from barter. Contested by economists, and worth reading precisely for the argument it starts.", "keyIdea": "Credit relationships predate coinage; debt is social before it is financial.", "bestFor": "You want the assumptions behind the textbook story examined.", "skipIf": "You want settled consensus — this book is disputed on specifics.", "formats": "Paperback · Kindle · Audiobook" },
-    { "rank": 3, "title": "Manias, Panics, and Crashes", "author": "Charles P. Kindleberger & Robert Z. Aliber", "published": "1978", "blurb": "The pattern-recognition manual for bubbles: displacement, credit expansion, euphoria, distress, revulsion. Once you have the sequence in mind you will see it forming in real time.", "keyIdea": "Bubbles follow a repeatable five-stage sequence driven by credit expansion.", "bestFor": "You want one framework that explains every crash you have lived through.", "skipIf": "You want forecasting rules — it explains, it does not predict timing.", "formats": "Hardcover · Paperback · Kindle" },
-    { "rank": 4, "title": "This Time Is Different", "author": "Carmen M. Reinhart & Kenneth S. Rogoff", "published": "2009", "blurb": "Eight centuries of financial crises assembled into data rather than anecdote. A permanent inoculation against optimism about sovereign debt; denser than the others here.", "keyIdea": "Default and banking collapse are ordinary recurring events, not aberrations.", "bestFor": "You want the evidence base rather than the narrative.", "skipIf": "Charts and data tables are not how you like to read.", "formats": "Paperback · Kindle" },
-    { "rank": 5, "title": "Capital in the Twenty-First Century", "author": "Thomas Piketty", "published": "2013", "blurb": "The most influential economics book of the century so far, built on two hundred years of tax records. Long, but the historical chapters read like narrative.", "keyIdea": "When returns on capital outpace growth, wealth concentrates by default.", "bestFor": "You want to understand the inequality debate from its most cited source.", "skipIf": "Six hundred pages is not the commitment you had in mind.", "formats": "Hardcover · Paperback · Kindle · Audiobook" }
+    {
+      "rank": 1,
+      "title": "The Wealth of Nations",
+      "author": "Adam Smith",
+      "published": "1776",
+      "blurb": "The founding text, and far less doctrinaire than the people who quote it. Smith on the division of labour, and on the self-interest of merchants, is still the sharpest introduction to how prices coordinate strangers.",
+      "keyIdea": "Prices coordinate the actions of strangers who have no knowledge of each other.",
+      "bestFor": "You want to know what Smith actually wrote rather than what he is quoted as writing.",
+      "skipIf": "You want a short read — get an abridged edition instead.",
+      "formats": "Hardcover · Paperback · Kindle",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/12816911-L.jpg"
+    },
+    {
+      "rank": 2,
+      "title": "Debt: The First 5,000 Years",
+      "author": "David Graeber",
+      "published": "2011",
+      "blurb": "An anthropologist's history of credit that upends the textbook story of money emerging from barter. Contested by economists, and worth reading precisely for the argument it starts.",
+      "keyIdea": "Credit relationships predate coinage; debt is social before it is financial.",
+      "bestFor": "You want the assumptions behind the textbook story examined.",
+      "skipIf": "You want settled consensus — this book is disputed on specifics.",
+      "formats": "Paperback · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/6299464-L.jpg"
+    },
+    {
+      "rank": 3,
+      "title": "Manias, Panics, and Crashes",
+      "author": "Charles P. Kindleberger & Robert Z. Aliber",
+      "published": "1978",
+      "blurb": "The pattern-recognition manual for bubbles: displacement, credit expansion, euphoria, distress, revulsion. Once you have the sequence in mind you will see it forming in real time.",
+      "keyIdea": "Bubbles follow a repeatable five-stage sequence driven by credit expansion.",
+      "bestFor": "You want one framework that explains every crash you have lived through.",
+      "skipIf": "You want forecasting rules — it explains, it does not predict timing.",
+      "formats": "Hardcover · Paperback · Kindle",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/4416578-L.jpg"
+    },
+    {
+      "rank": 4,
+      "title": "This Time Is Different",
+      "author": "Carmen M. Reinhart & Kenneth S. Rogoff",
+      "published": "2009",
+      "blurb": "Eight centuries of financial crises assembled into data rather than anecdote. A permanent inoculation against optimism about sovereign debt; denser than the others here.",
+      "keyIdea": "Default and banking collapse are ordinary recurring events, not aberrations.",
+      "bestFor": "You want the evidence base rather than the narrative.",
+      "skipIf": "Charts and data tables are not how you like to read.",
+      "formats": "Paperback · Kindle",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10193793-L.jpg"
+    },
+    {
+      "rank": 5,
+      "title": "Capital in the Twenty-First Century",
+      "author": "Thomas Piketty",
+      "published": "2013",
+      "blurb": "The most influential economics book of the century so far, built on two hundred years of tax records. Long, but the historical chapters read like narrative.",
+      "keyIdea": "When returns on capital outpace growth, wealth concentrates by default.",
+      "bestFor": "You want to understand the inequality debate from its most cited source.",
+      "skipIf": "Six hundred pages is not the commitment you had in mind.",
+      "formats": "Hardcover · Paperback · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/7274591-L.jpg"
+    }
   ]
 }

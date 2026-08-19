@@ -14,10 +14,22 @@
   "methodTitle": "Why these five, and in this order",
   "methodBody": "The ranking follows the order a beginner should actually read them in, not the order of historical importance. Graham comes first because every later book argues with him. Housel comes second because behaviour destroys more returns than bad security selection ever will. Malkiel is third as the empirical check on the two above. Fisher and Munger sit at the end because both assume you already know what a business is worth. Titles were removed this cycle when a shorter book made the same argument more clearly: Security Analysis lost its place to The Intelligent Investor for that reason.",
   "faq": [
-    { "q": "What is the single best investing book for a complete beginner?", "a": "The Psychology of Money, not The Intelligent Investor. Graham is the more important book, but Housel is the one a first-time reader finishes. Read Housel, then Malkiel, then come back to Graham within the year." },
-    { "q": "Is The Intelligent Investor still relevant?", "a": "The specific 1949 examples are dead; the framework is not. Margin of safety, the distinction between investment and speculation, and Mr. Market as a metaphor are all still load-bearing. Use the Zweig commentary edition, which annotates the dated passages." },
-    { "q": "Do I need to read all five?", "a": "No. Housel and Malkiel together are enough to build a sensible index portfolio and never look at it again. The other three matter only if you intend to value individual companies." },
-    { "q": "Why is there no book about options or day trading here?", "a": "Because the honest literature on both concludes that most retail participants lose money, and the books that promise otherwise are selling a course. If that changes, the list changes." }
+    {
+      "q": "What is the single best investing book for a complete beginner?",
+      "a": "The Psychology of Money, not The Intelligent Investor. Graham is the more important book, but Housel is the one a first-time reader finishes. Read Housel, then Malkiel, then come back to Graham within the year."
+    },
+    {
+      "q": "Is The Intelligent Investor still relevant?",
+      "a": "The specific 1949 examples are dead; the framework is not. Margin of safety, the distinction between investment and speculation, and Mr. Market as a metaphor are all still load-bearing. Use the Zweig commentary edition, which annotates the dated passages."
+    },
+    {
+      "q": "Do I need to read all five?",
+      "a": "No. Housel and Malkiel together are enough to build a sensible index portfolio and never look at it again. The other three matter only if you intend to value individual companies."
+    },
+    {
+      "q": "Why is there no book about options or day trading here?",
+      "a": "Because the honest literature on both concludes that most retail participants lose money, and the books that promise otherwise are selling a course. If that changes, the list changes."
+    }
   ],
   "updated": "2026-08-19",
   "seo": {
@@ -25,10 +37,65 @@
     "description": "Five investing books, read in full and ranked on what they teach about markets, risk, and patience."
   },
   "books": [
-    { "rank": 1, "title": "The Intelligent Investor", "author": "Benjamin Graham", "published": "1949", "blurb": "The foundational text on value investing — still the book most working investors say shaped how they think about risk and patience.", "keyIdea": "Price and value are different numbers; the gap between them, the margin of safety, is where returns come from.", "bestFor": "You want a permanent framework rather than a strategy for this market.", "skipIf": "You need something you can act on this week — the payoff here is slow.", "formats": "Hardcover · Paperback · Kindle" },
-    { "rank": 2, "title": "The Psychology of Money", "author": "Morgan Housel", "published": "2020", "blurb": "Less about formulas, more about behavior — why smart people make bad money decisions, and how to fix that before touching a spreadsheet.", "keyIdea": "Financial outcomes are driven by temperament and time, not intelligence or analysis.", "bestFor": "This is your first finance book, or you keep undoing a plan that was working.", "skipIf": "You want portfolio mechanics; there are almost no numbers in it.", "formats": "Paperback · Audiobook" },
-    { "rank": 3, "title": "A Random Walk Down Wall Street", "author": "Burton Malkiel", "published": "1973", "blurb": "The case for index investing, made plainly — essential if you want to understand why “beating the market” is harder than it sounds.", "keyIdea": "Fifty years of evidence that active strategies rarely survive their own costs.", "bestFor": "You are deciding between picking stocks and buying the whole market.", "skipIf": "You are already fully indexed and convinced — you know the conclusion.", "formats": "Paperback · Kindle" },
-    { "rank": 4, "title": "Common Stocks and Uncommon Profits", "author": "Philip Fisher", "published": "1958", "blurb": "A companion to Graham's approach — Fisher's scuttlebutt method influenced how Buffett himself evaluates a business, not just a price.", "keyIdea": "Judge management and research culture, not just the balance sheet.", "bestFor": "You want to analyse individual companies and need a qualitative method.", "skipIf": "You have no intention of researching a single company yourself.", "formats": "Paperback · Kindle" },
-    { "rank": 5, "title": "Poor Charlie's Almanack", "author": "Charlie Munger", "published": "2005", "blurb": "Denser and less linear than the others — a lifetime of mental models from Buffett's partner, best read once you already have the basics down.", "keyIdea": "Good decisions come from borrowing models across disciplines and inverting the question.", "bestFor": "You have read the other four and want the thinking behind them.", "skipIf": "You are starting out — it assumes a great deal.", "formats": "Hardcover" }
+    {
+      "rank": 1,
+      "title": "The Intelligent Investor",
+      "author": "Benjamin Graham",
+      "published": "1949",
+      "blurb": "The foundational text on value investing — still the book most working investors say shaped how they think about risk and patience.",
+      "keyIdea": "Price and value are different numbers; the gap between them, the margin of safety, is where returns come from.",
+      "bestFor": "You want a permanent framework rather than a strategy for this market.",
+      "skipIf": "You need something you can act on this week — the payoff here is slow.",
+      "formats": "Hardcover · Paperback · Kindle",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/36434-L.jpg"
+    },
+    {
+      "rank": 2,
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "published": "2020",
+      "blurb": "Less about formulas, more about behavior — why smart people make bad money decisions, and how to fix that before touching a spreadsheet.",
+      "keyIdea": "Financial outcomes are driven by temperament and time, not intelligence or analysis.",
+      "bestFor": "This is your first finance book, or you keep undoing a plan that was working.",
+      "skipIf": "You want portfolio mechanics; there are almost no numbers in it.",
+      "formats": "Paperback · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10389354-L.jpg"
+    },
+    {
+      "rank": 3,
+      "title": "A Random Walk Down Wall Street",
+      "author": "Burton Malkiel",
+      "published": "1973",
+      "blurb": "The case for index investing, made plainly — essential if you want to understand why “beating the market” is harder than it sounds.",
+      "keyIdea": "Fifty years of evidence that active strategies rarely survive their own costs.",
+      "bestFor": "You are deciding between picking stocks and buying the whole market.",
+      "skipIf": "You are already fully indexed and convinced — you know the conclusion.",
+      "formats": "Paperback · Kindle",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/246978-L.jpg"
+    },
+    {
+      "rank": 4,
+      "title": "Common Stocks and Uncommon Profits",
+      "author": "Philip Fisher",
+      "published": "1958",
+      "blurb": "A companion to Graham's approach — Fisher's scuttlebutt method influenced how Buffett himself evaluates a business, not just a price.",
+      "keyIdea": "Judge management and research culture, not just the balance sheet.",
+      "bestFor": "You want to analyse individual companies and need a qualitative method.",
+      "skipIf": "You have no intention of researching a single company yourself.",
+      "formats": "Paperback · Kindle",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/788750-L.jpg"
+    },
+    {
+      "rank": 5,
+      "title": "Poor Charlie's Almanack",
+      "author": "Charlie Munger",
+      "published": "2005",
+      "blurb": "Denser and less linear than the others — a lifetime of mental models from Buffett's partner, best read once you already have the basics down.",
+      "keyIdea": "Good decisions come from borrowing models across disciplines and inverting the question.",
+      "bestFor": "You have read the other four and want the thinking behind them.",
+      "skipIf": "You are starting out — it assumes a great deal.",
+      "formats": "Hardcover",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/8337563-L.jpg"
+    }
   ]
 }

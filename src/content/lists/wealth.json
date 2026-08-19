@@ -14,10 +14,22 @@
   "methodTitle": "What separates these from the rest of the shelf",
   "methodBody": "Most wealth-building books are one insight stretched to 250 pages, and most of those insights are about income. These five are about retention and time instead, which is where the arithmetic actually lives. Stanley and Robin supply the evidence, Clason supplies the habit, Richards supplies the diagnosis of self-sabotage, and Perkins is included specifically to argue against the other four — a list that only tells you to save is incomplete advice about a finite life.",
   "faq": [
-    { "q": "Where should I start if I only read one?", "a": "The Millionaire Next Door if you want evidence, Your Money or Your Life if you want your habits to change. They aim at the same conclusion from opposite directions." },
-    { "q": "Is Rich Dad Poor Dad missing on purpose?", "a": "Yes. Its core distinction between assets and liabilities is useful, but too much of the surrounding advice is unverifiable or actively risky, and the accounting is loose. Better arguments exist in every book listed above." },
-    { "q": "Do these books work outside the United States?", "a": "The principles do; the tax and account specifics do not. Robin and Sethi are the most US-specific. Read them for structure and substitute your own country's tax-advantaged accounts." },
-    { "q": "How much income do I need before these are useful?", "a": "Enough to save something consistently, even a small amount. Below that, the debt list is the more useful starting point, since clearing a balance is the highest guaranteed return available to you." }
+    {
+      "q": "Where should I start if I only read one?",
+      "a": "The Millionaire Next Door if you want evidence, Your Money or Your Life if you want your habits to change. They aim at the same conclusion from opposite directions."
+    },
+    {
+      "q": "Is Rich Dad Poor Dad missing on purpose?",
+      "a": "Yes. Its core distinction between assets and liabilities is useful, but too much of the surrounding advice is unverifiable or actively risky, and the accounting is loose. Better arguments exist in every book listed above."
+    },
+    {
+      "q": "Do these books work outside the United States?",
+      "a": "The principles do; the tax and account specifics do not. Robin and Sethi are the most US-specific. Read them for structure and substitute your own country's tax-advantaged accounts."
+    },
+    {
+      "q": "How much income do I need before these are useful?",
+      "a": "Enough to save something consistently, even a small amount. Below that, the debt list is the more useful starting point, since clearing a balance is the highest guaranteed return available to you."
+    }
   ],
   "updated": "2026-08-19",
   "seo": {
@@ -25,10 +37,65 @@
     "description": "Five books on the behaviour behind a growing balance sheet: what you spend, what you keep, and how long you leave it alone."
   },
   "books": [
-    { "rank": 1, "title": "The Millionaire Next Door", "author": "Thomas J. Stanley & William D. Danko", "published": "1996", "blurb": "A study of who is actually wealthy in America, and the answer is rarely who looks it. The data on income versus accumulated net worth reframes spending as the central variable.", "keyIdea": "High income and high net worth are weakly correlated; consumption is the variable people underestimate.", "bestFor": "You earn well and cannot work out where it goes.", "skipIf": "Dated examples irritate you more than data persuades you.", "formats": "Paperback · Kindle · Audiobook" },
-    { "rank": 2, "title": "Your Money or Your Life", "author": "Vicki Robin & Joe Dominguez", "published": "1992", "blurb": "The book that turned saving into a question about time rather than money: every purchase costs hours of your life. Its nine-step programme is the origin of most modern financial-independence writing.", "keyIdea": "Convert every expense into hours worked, and spending decisions change on their own.", "bestFor": "You want a complete programme, not a set of principles.", "skipIf": "You dislike tracking every transaction — the method depends on it.", "formats": "Paperback · Kindle · Audiobook" },
-    { "rank": 3, "title": "The Richest Man in Babylon", "author": "George S. Clason", "published": "1926", "blurb": "Parables from 1926 that reduce wealth building to a handful of rules — pay yourself first, make savings work, guard against loss. An hour to read, decades to apply.", "keyIdea": "Pay yourself first, and treat the tenth you keep as untouchable.", "bestFor": "You want the rules in an evening, in a form you will remember.", "skipIf": "You need modern specifics — there are none.", "formats": "Paperback · Kindle · Audiobook" },
-    { "rank": 4, "title": "The Behavior Gap", "author": "Carl Richards", "published": "2012", "blurb": "Richards draws the distance between what a sound plan returns and what investors actually earn by interfering with it. Short, sketch-driven, and the best diagnosis of self-inflicted losses.", "keyIdea": "The gap between investment return and investor return is created by your own decisions.", "bestFor": "You have a plan and keep intervening in it.", "skipIf": "You want depth; it is deliberately brief.", "formats": "Hardcover · Kindle" },
-    { "rank": 5, "title": "Die With Zero", "author": "Bill Perkins", "published": "2020", "blurb": "The necessary counterweight to a shelf of books about accumulation: money buys experiences that are worth most at a particular age. Provocative, and a useful check on reflexive frugality.", "keyIdea": "Experiences have an expiry date, so the optimal savings rate is not the highest one.", "bestFor": "You save compulsively and never spend any of it.", "skipIf": "You have no savings yet — the argument doesn't apply to you.", "formats": "Hardcover · Kindle · Audiobook" }
+    {
+      "rank": 1,
+      "title": "The Millionaire Next Door",
+      "author": "Thomas J. Stanley & William D. Danko",
+      "published": "1996",
+      "blurb": "A study of who is actually wealthy in America, and the answer is rarely who looks it. The data on income versus accumulated net worth reframes spending as the central variable.",
+      "keyIdea": "High income and high net worth are weakly correlated; consumption is the variable people underestimate.",
+      "bestFor": "You earn well and cannot work out where it goes.",
+      "skipIf": "Dated examples irritate you more than data persuades you.",
+      "formats": "Paperback · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/797467-L.jpg"
+    },
+    {
+      "rank": 2,
+      "title": "Your Money or Your Life",
+      "author": "Vicki Robin & Joe Dominguez",
+      "published": "1992",
+      "blurb": "The book that turned saving into a question about time rather than money: every purchase costs hours of your life. Its nine-step programme is the origin of most modern financial-independence writing.",
+      "keyIdea": "Convert every expense into hours worked, and spending decisions change on their own.",
+      "bestFor": "You want a complete programme, not a set of principles.",
+      "skipIf": "You dislike tracking every transaction — the method depends on it.",
+      "formats": "Paperback · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/6975229-L.jpg"
+    },
+    {
+      "rank": 3,
+      "title": "The Richest Man in Babylon",
+      "author": "George S. Clason",
+      "published": "1926",
+      "blurb": "Parables from 1926 that reduce wealth building to a handful of rules — pay yourself first, make savings work, guard against loss. An hour to read, decades to apply.",
+      "keyIdea": "Pay yourself first, and treat the tenth you keep as untouchable.",
+      "bestFor": "You want the rules in an evening, in a form you will remember.",
+      "skipIf": "You need modern specifics — there are none.",
+      "formats": "Paperback · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10491331-L.jpg"
+    },
+    {
+      "rank": 4,
+      "title": "The Behavior Gap",
+      "author": "Carl Richards",
+      "published": "2012",
+      "blurb": "Richards draws the distance between what a sound plan returns and what investors actually earn by interfering with it. Short, sketch-driven, and the best diagnosis of self-inflicted losses.",
+      "keyIdea": "The gap between investment return and investor return is created by your own decisions.",
+      "bestFor": "You have a plan and keep intervening in it.",
+      "skipIf": "You want depth; it is deliberately brief.",
+      "formats": "Hardcover · Kindle",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10213246-L.jpg"
+    },
+    {
+      "rank": 5,
+      "title": "Die With Zero",
+      "author": "Bill Perkins",
+      "published": "2020",
+      "blurb": "The necessary counterweight to a shelf of books about accumulation: money buys experiences that are worth most at a particular age. Provocative, and a useful check on reflexive frugality.",
+      "keyIdea": "Experiences have an expiry date, so the optimal savings rate is not the highest one.",
+      "bestFor": "You save compulsively and never spend any of it.",
+      "skipIf": "You have no savings yet — the argument doesn't apply to you.",
+      "formats": "Hardcover · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10433791-L.jpg"
+    }
   ]
 }

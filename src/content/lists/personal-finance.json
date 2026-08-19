@@ -14,10 +14,22 @@
   "methodTitle": "Ranked on completion, not on optimality",
   "methodBody": "The mathematically optimal repayment order is highest interest rate first, and almost nobody finishes that way. This list is ordered by how likely a demoralised reader is to reach the end of the plan, which is why Ramsey's snowball leads despite costing slightly more in interest. Sethi follows because automation removes willpower from the loop entirely. Collins, Lowry, and Aliche are each here for a specific reader the first two miss: the reader who wants brevity, the reader with student loans and thin credit, and the reader whose last attempt was wrecked by an emergency.",
   "faq": [
-    { "q": "Snowball or avalanche — which should I use?", "a": "Avalanche costs less; snowball gets finished more often. If you have abandoned a payoff plan before, use the snowball and accept the small extra interest as the price of completing it." },
-    { "q": "Which book if I have student loans specifically?", "a": "Broke Millennial. Lowry covers thin credit files, repayment plan selection, and the conversations around family money that the other four skip." },
-    { "q": "Should I save or pay off debt first?", "a": "A small emergency buffer first, then debt, then real savings — Aliche makes this case best. Paying off a balance with no buffer usually ends with the balance back on the card after the first unexpected expense." },
-    { "q": "Is any of this advice, formally?", "a": "No. Everything here is a book review. Nothing on this site is financial advice, and none of these authors know your situation, tax position, or interest rates." }
+    {
+      "q": "Snowball or avalanche — which should I use?",
+      "a": "Avalanche costs less; snowball gets finished more often. If you have abandoned a payoff plan before, use the snowball and accept the small extra interest as the price of completing it."
+    },
+    {
+      "q": "Which book if I have student loans specifically?",
+      "a": "Broke Millennial. Lowry covers thin credit files, repayment plan selection, and the conversations around family money that the other four skip."
+    },
+    {
+      "q": "Should I save or pay off debt first?",
+      "a": "A small emergency buffer first, then debt, then real savings — Aliche makes this case best. Paying off a balance with no buffer usually ends with the balance back on the card after the first unexpected expense."
+    },
+    {
+      "q": "Is any of this advice, formally?",
+      "a": "No. Everything here is a book review. Nothing on this site is financial advice, and none of these authors know your situation, tax position, or interest rates."
+    }
   ],
   "updated": "2026-08-19",
   "seo": {
@@ -25,10 +37,65 @@
     "description": "Five practical books on clearing balances and staying clear — an order of operations plus the psychology to keep going."
   },
   "books": [
-    { "rank": 1, "title": "The Total Money Makeover", "author": "Dave Ramsey", "published": "2003", "blurb": "The debt snowball is mathematically suboptimal and behaviourally excellent, and Ramsey explains why the second matters more when you are demoralised. Rigid by design: seven steps, no negotiation.", "keyIdea": "Smallest balance first, because early wins are what keep people in the plan.", "bestFor": "You have started and abandoned a payoff plan before.", "skipIf": "You want interest-rate optimality, or the moralising tone will lose you.", "formats": "Hardcover · Paperback · Kindle · Audiobook" },
-    { "rank": 2, "title": "I Will Teach You to Be Rich", "author": "Ramit Sethi", "published": "2009", "blurb": "A six-week setup that automates payments, savings, and investing so willpower stops being the bottleneck. Unusually specific — scripts for negotiating fees, exact account structures.", "keyIdea": "Automate the transfers once and the outcome stops depending on discipline.", "bestFor": "You want a system built in six weeks and then left alone.", "skipIf": "You are outside the US — the account specifics won't map.", "formats": "Paperback · Kindle · Audiobook" },
-    { "rank": 3, "title": "The Simple Path to Wealth", "author": "J L Collins", "published": "2016", "blurb": "Written as letters to his daughter, which keeps it plain: clear the debt, avoid the debt again, then own the index. The best explanation of why a paid-off balance is the highest guaranteed return most people can get.", "keyIdea": "Clearing a balance is a guaranteed return at the interest rate you were paying.", "bestFor": "You want the whole argument in a single short book.", "skipIf": "You want detail on credit repair or negotiation.", "formats": "Paperback · Kindle · Audiobook" },
-    { "rank": 4, "title": "Broke Millennial", "author": "Erin Lowry", "published": "2017", "blurb": "Aimed at readers with student loans, thin credit files, and awkward money conversations to have. Lowry covers the situations other books skip, including how to talk about debt with a partner.", "keyIdea": "Debt decisions are social as often as they are financial.", "bestFor": "You are carrying student loans and building credit from nothing.", "skipIf": "You are mid-career with a settled balance sheet.", "formats": "Paperback · Kindle · Audiobook" },
-    { "rank": 5, "title": "Get Good with Money", "author": "Tiffany Aliche", "published": "2021", "blurb": "Ten checkpoints toward what Aliche calls financial wholeness, with payoff set in the context of insurance, credit, and savings. Useful if you have tried a plan and watched an emergency undo it.", "keyIdea": "Payoff only holds when insurance and a buffer are in place around it.", "bestFor": "An emergency has derailed your repayment before.", "skipIf": "You want a single-focus payoff plan and nothing else.", "formats": "Hardcover · Kindle · Audiobook" }
+    {
+      "rank": 1,
+      "title": "The Total Money Makeover",
+      "author": "Dave Ramsey",
+      "published": "2003",
+      "blurb": "The debt snowball is mathematically suboptimal and behaviourally excellent, and Ramsey explains why the second matters more when you are demoralised. Rigid by design: seven steps, no negotiation.",
+      "keyIdea": "Smallest balance first, because early wins are what keep people in the plan.",
+      "bestFor": "You have started and abandoned a payoff plan before.",
+      "skipIf": "You want interest-rate optimality, or the moralising tone will lose you.",
+      "formats": "Hardcover · Paperback · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/6873839-L.jpg"
+    },
+    {
+      "rank": 2,
+      "title": "I Will Teach You to Be Rich",
+      "author": "Ramit Sethi",
+      "published": "2009",
+      "blurb": "A six-week setup that automates payments, savings, and investing so willpower stops being the bottleneck. Unusually specific — scripts for negotiating fees, exact account structures.",
+      "keyIdea": "Automate the transfers once and the outcome stops depending on discipline.",
+      "bestFor": "You want a system built in six weeks and then left alone.",
+      "skipIf": "You are outside the US — the account specifics won't map.",
+      "formats": "Paperback · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/6305971-L.jpg"
+    },
+    {
+      "rank": 3,
+      "title": "The Simple Path to Wealth",
+      "author": "J L Collins",
+      "published": "2016",
+      "blurb": "Written as letters to his daughter, which keeps it plain: clear the debt, avoid the debt again, then own the index. The best explanation of why a paid-off balance is the highest guaranteed return most people can get.",
+      "keyIdea": "Clearing a balance is a guaranteed return at the interest rate you were paying.",
+      "bestFor": "You want the whole argument in a single short book.",
+      "skipIf": "You want detail on credit repair or negotiation.",
+      "formats": "Paperback · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10448941-L.jpg"
+    },
+    {
+      "rank": 4,
+      "title": "Broke Millennial",
+      "author": "Erin Lowry",
+      "published": "2017",
+      "blurb": "Aimed at readers with student loans, thin credit files, and awkward money conversations to have. Lowry covers the situations other books skip, including how to talk about debt with a partner.",
+      "keyIdea": "Debt decisions are social as often as they are financial.",
+      "bestFor": "You are carrying student loans and building credit from nothing.",
+      "skipIf": "You are mid-career with a settled balance sheet.",
+      "formats": "Paperback · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/14626166-L.jpg"
+    },
+    {
+      "rank": 5,
+      "title": "Get Good with Money",
+      "author": "Tiffany Aliche",
+      "published": "2021",
+      "blurb": "Ten checkpoints toward what Aliche calls financial wholeness, with payoff set in the context of insurance, credit, and savings. Useful if you have tried a plan and watched an emergency undo it.",
+      "keyIdea": "Payoff only holds when insurance and a buffer are in place around it.",
+      "bestFor": "An emergency has derailed your repayment before.",
+      "skipIf": "You want a single-focus payoff plan and nothing else.",
+      "formats": "Hardcover · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10955890-L.jpg"
+    }
   ]
 }
