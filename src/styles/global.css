@@ -1,0 +1,102 @@
+:root{
+  --paper:#fbfaf7;
+  --ink:#1a1a18;
+  --ink-soft:#5c584f;
+  --line:#e4e0d6;
+  --accent:#7a2e2e;
+  --accent-soft:#f3e6e2;
+  --navy:#1f2b3a;
+
+  --rank:#c9c3b4;
+  --footer-body:#c8cfd8;
+  --footer-muted:#9aa5b3;
+  --footer-bottom:#8592a1;
+  --footer-wordmark-italic:#e0a9a9;
+
+  --serif: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{-webkit-font-smoothing:antialiased}
+
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  line-height:1.55;
+}
+
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+
+input{font:inherit}
+
+img{max-width:100%;display:block}
+
+:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:2px;
+}
+
+.visually-hidden{
+  position:absolute;
+  width:1px;height:1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+}
+
+.kicker{
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:11px;
+  font-weight:700;
+  color:var(--accent);
+  margin-bottom:18px;
+}
+
+.buy-btn{
+  display:inline-block;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.03em;
+  text-transform:uppercase;
+  color:#fff;
+  background:var(--ink);
+  padding:9px 18px;
+  border-radius:2px;
+  transition:background-color .15s ease, color .15s ease;
+}
+.buy-btn:hover{background:var(--accent);color:#fff}
+
+.buy-btn-outline{
+  display:inline-block;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.03em;
+  text-transform:uppercase;
+  color:var(--ink);
+  border:1px solid var(--ink);
+  padding:8px 17px;
+  border-radius:2px;
+  transition:color .15s ease, border-color .15s ease;
+}
+.buy-btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+
+@media (max-width:760px){
+  .intro h1{font-size:29px}
+  .book-row{grid-template-columns:40px 100px 1fr}
+  .cover{width:100px;height:150px}
+  .related-grid{grid-template-columns:1fr}
+  .footer-wrap{grid-template-columns:1fr 1fr}
+  .expert-strip{flex-direction:column;gap:10px}
+  .main-nav{gap:16px;flex-wrap:wrap;justify-content:flex-end}
+  .faq-grid{grid-template-columns:1fr}
+  .nav-wrap{flex-wrap:wrap}
+}
+
+@media (max-width:480px){
+  .footer-wrap{grid-template-columns:1fr}
+}

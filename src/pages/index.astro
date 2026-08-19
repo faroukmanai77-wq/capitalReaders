@@ -1,0 +1,111 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../components/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import AuthorByline from '../components/AuthorByline.astro';
+import BookRow from '../components/BookRow.astro';
+import PullQuote from '../components/PullQuote.astro';
+import MethodAndFaq from '../components/MethodAndFaq.astro';
+import RelatedLists from '../components/RelatedLists.astro';
+import { buildGraph } from '../lib/schema';
+
+const investing = await getEntry('lists', 'investing');
+const wealth = await getEntry('lists', 'wealth');
+const economics = await getEntry('lists', 'economics');
+const personalFinance = await getEntry('lists', 'personal-finance');
+
+if (!investing || !wealth || !economics || !personalFinance) {
+  throw new Error('Missing required list content collection entries');
+}
+
+const home = {
+  kicker: 'Curated Reading on Money, Wealth & Economics',
+  title: 'The books that actually change how you handle money',
+  intro:
+    "Four lists on investing, wealth building, economics, and personal finance. Every title is read in full and ranked on what it teaches — so you read fewer books, better ones.",
+  listKicker: 'Most Read This Month',
+  listTitle: "Where to start, whatever you're trying to fix",
+  listStandfirst:
+    'One book from each list, for readers who want a single place to begin. The full rankings sit behind each of the four category pages.',
+  quote:
+    "“You don't need more books on investing. You need the five that will actually change how you think about money — and then the discipline to reread them.”",
+  quoteSource: '— Capital Reads, Editorial Note',
+  methodTitle: 'How a book gets onto this site',
+  methodBody:
+    'Every title is read cover to cover before it is ranked, and ranked on what it teaches a reader who does not already know the subject. No publisher can buy a place, no review copies are accepted in exchange for coverage, and affiliate commission rates are identical across every book listed, so they cannot influence an order. Lists are re-examined monthly; a book drops off when a clearer explanation of the same idea appears.',
+  faq: [
+    {
+      q: 'What makes this different from other book roundup sites?',
+      a: 'Every book is read in full, the reasoning for each ranking is published alongside it, and each entry says who should skip the book. Lists stay at five titles rather than growing to fifty, because a list of fifty is not a recommendation.',
+    },
+    {
+      q: 'How do you make money?',
+      a: 'Amazon and Bookshop.org affiliate links. If you buy through one, we may earn a commission at no extra cost to you. Rates do not vary by title in any way that could change a ranking — the full disclosure page sets out the arrangement.',
+    },
+    {
+      q: 'Where should a complete beginner start?',
+      a: 'The Psychology of Money on the investing list, or the debt list if you are carrying a balance. Clearing high-interest debt beats any investment return you can reliably expect.',
+    },
+    {
+      q: 'Is anything here financial advice?',
+      a: 'No. These are book reviews. Nothing on this site accounts for your situation, and no author listed here knows your tax position or your interest rates.',
+    },
+  ],
+  seoTitle: 'Book lists on investing, wealth, and economics',
+  seoDescription:
+    'Editorial reading lists on investing, wealth building, economics, and personal finance. Every title read in full before ranking.',
+};
+
+const mostRead = [
+  investing.data.books[0],
+  wealth.data.books[0],
+  economics.data.books[2],
+  personalFinance.data.books[1],
+];
+
+const updated = investing.data.updated;
+const updatedIso = updated.toISOString().slice(0, 10);
+
+const allLists = [investing, wealth, economics, personalFinance];
+
+const jsonLd = buildGraph({
+  pageTitle: home.seoTitle,
+  dateModified: updatedIso,
+  itemList: {
+    name: home.listTitle,
+    description: home.listStandfirst,
+    books: mostRead,
+  },
+  faq: home.faq,
+});
+---
+
+<BaseLayout title={home.seoTitle} description={home.seoDescription} currentPath="/" jsonLd={jsonLd}>
+  <main>
+    <Hero kicker={home.kicker} title={home.title} intro={home.intro} />
+    <AuthorByline updated={updated} />
+
+    <section style="max-width:900px; margin:0 auto; padding:52px 28px 0">
+      <div style="margin-bottom:34px">
+        <div class="kicker" style="margin-bottom:10px">{home.listKicker}</div>
+        <h2 style="font-family:var(--serif); font-size:28px; font-weight:400; margin-bottom:12px">{home.listTitle}</h2>
+        <p style="font-size:14.5px; color:var(--ink-soft); max-width:64ch">{home.listStandfirst}</p>
+      </div>
+
+      {mostRead.map((book, i) => <BookRow book={book} index={i} headingLevel="h3" isFirst={i === 0} />)}
+    </section>
+
+    <PullQuote quote={home.quote} source={home.quoteSource} />
+
+    <MethodAndFaq methodTitle={home.methodTitle} methodBody={home.methodBody} faq={home.faq} />
+
+    <RelatedLists
+      lists={allLists.map((l) => ({
+        kicker: l.data.category,
+        cardTitle: l.data.cardTitle,
+        cardSummary: l.data.cardSummary,
+        href: `/${l.data.path}`,
+      }))}
+    />
+  </main>
+</BaseLayout>

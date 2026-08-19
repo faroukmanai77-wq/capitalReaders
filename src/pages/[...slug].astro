@@ -1,0 +1,88 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../components/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import AuthorByline from '../components/AuthorByline.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import BookRow from '../components/BookRow.astro';
+import PullQuote from '../components/PullQuote.astro';
+import MethodAndFaq from '../components/MethodAndFaq.astro';
+import RelatedLists from '../components/RelatedLists.astro';
+import { buildGraph } from '../lib/schema';
+import { SITE } from '../config';
+
+export async function getStaticPaths() {
+  const lists = await getCollection('lists');
+  return lists.map((entry) => ({
+    params: { slug: entry.data.path },
+    props: { entry, allLists: lists },
+  }));
+}
+
+const { entry, allLists } = Astro.props;
+const list = entry.data;
+
+const related = allLists.filter((l) => l.id !== entry.id).slice(0, 3);
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: list.category, href: `/${list.path}` },
+];
+
+const updatedIso = list.updated.toISOString().slice(0, 10);
+
+const jsonLd = buildGraph({
+  pageTitle: list.seo.title,
+  dateModified: updatedIso,
+  breadcrumbs: [
+    { name: 'Home', path: '/' },
+    { name: list.category, path: `/${list.path}` },
+    { name: list.listKicker, path: `/${list.path}` },
+  ],
+  itemList: {
+    name: list.listTitle,
+    description: list.seo.description,
+    books: list.books,
+  },
+  faq: list.faq,
+});
+---
+
+<BaseLayout
+  title={list.seo.title}
+  description={list.seo.description}
+  ogImage={list.seo.ogImage}
+  currentPath={`/${list.path}`}
+  jsonLd={jsonLd}
+>
+  <main>
+    <Breadcrumb crumbs={crumbs} current={list.listKicker} />
+    <Hero kicker={list.kicker} title={list.title} intro={list.intro} />
+    <AuthorByline updated={list.updated} />
+
+    <section style="max-width:900px; margin:0 auto; padding:52px 28px 0">
+      <div style="margin-bottom:34px">
+        <div class="kicker" style="margin-bottom:10px">{list.listKicker}</div>
+        <h2 style="font-family:var(--serif); font-size:28px; font-weight:400; margin-bottom:12px">{list.listTitle}</h2>
+        <p style="font-size:14.5px; color:var(--ink-soft); max-width:64ch">{list.listStandfirst}</p>
+      </div>
+
+      {list.books
+        .sort((a, b) => a.rank - b.rank)
+        .map((book, i) => <BookRow book={book} index={i} headingLevel="h3" isFirst={i === 0} />)}
+    </section>
+
+    <PullQuote quote={list.quote} source={list.quoteSource} />
+
+    <MethodAndFaq methodTitle={list.methodTitle} methodBody={list.methodBody} faq={list.faq} />
+
+    <RelatedLists
+      lists={related.map((r) => ({
+        kicker: r.data.category,
+        cardTitle: r.data.cardTitle,
+        cardSummary: r.data.cardSummary,
+        href: `/${r.data.path}`,
+      }))}
+    />
+  </main>
+</BaseLayout>

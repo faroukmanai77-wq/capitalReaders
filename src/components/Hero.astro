@@ -1,0 +1,20 @@
+---
+import { SITE } from '../config';
+
+interface Props {
+  kicker: string;
+  title: string;
+  intro: string;
+}
+
+const { kicker, title, intro } = Astro.props;
+---
+
+<div class="intro" style="max-width:760px; margin:0 auto; padding:56px 28px 40px; text-align:center">
+  <div class="kicker">{kicker}</div>
+  <h1 style="font-family:var(--serif); font-size:38px; line-height:1.25; font-weight:400; margin-bottom:18px">{title}</h1>
+  <p style="font-size:16px; color:var(--ink-soft); max-width:56ch; margin:0 auto">{intro}</p>
+  <div style="margin-top:22px; font-size:12.5px; color:var(--ink-soft); letter-spacing:.02em">
+    Curated by <b style="color:var(--ink)">{SITE.brand}</b> — updated monthly with the titles worth your time.
+  </div>
+</div>

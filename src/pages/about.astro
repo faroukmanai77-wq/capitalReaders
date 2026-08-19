@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../components/BaseLayout.astro';
+import DocSections from '../components/DocSections.astro';
+import { buildGraph } from '../lib/schema';
+
+const doc = {
+  kicker: 'Our Method',
+  title: 'How these lists are made',
+  standfirst:
+    'Every book on this site was read cover to cover by someone on the editorial side before it was ranked. Nothing is placed, paid for, or included because it sells well.',
+  sections: [
+    {
+      heading: 'Who writes this',
+      body: 'This site is written by one person, named in the byline on every list page, with the relevant background stated there rather than implied. If a list is later revised by someone else, the byline changes with it. We do not publish anonymous rankings, and we do not use fabricated expert panels — if a practitioner reviewed a shortlist, they are named.',
+    },
+    {
+      heading: 'Read in full, then ranked',
+      body: 'A title enters consideration only after a full read. We rank on what the book teaches a reader who does not already know the subject: clarity of explanation, quality of evidence, and whether the advice survives contact with a real balance sheet. Popularity is evidence of nothing, and neither is a bestseller list.',
+    },
+    {
+      heading: 'Revisited monthly',
+      body: 'Lists are re-examined every month and the date of the last review appears on each page. Books drop off when a better explanation of the same idea appears, when data ages badly, or when an edition goes out of print. Where a book is contested — Piketty and Graeber both are — we say so in the entry rather than quietly leaving it out.',
+    },
+    {
+      heading: 'How we make money',
+      body: 'Links to Amazon and Bookshop.org are affiliate links: a purchase may earn us a commission at no extra cost to you. Commission rates are identical across every book we list, so no ranking can be bought or nudged by revenue, and no publisher can pay for placement. Full details are on the affiliate disclosure page.',
+    },
+    {
+      heading: 'Not financial advice',
+      body: "Everything published here is a book review. It is not personalised financial, investment, tax, or legal advice, and it cannot account for your circumstances. Where a book's advice is jurisdiction-specific — most US personal finance books are — the entry says so.",
+    },
+    {
+      heading: 'Corrections',
+      body: 'If something here is wrong, write to us and we will correct it and note the correction on the page. That includes disagreements about a ranking, which we will publish where the argument is good.',
+    },
+  ],
+  updated: 'August 2026',
+  updatedIso: '2026-08-19',
+};
+
+const jsonLd = buildGraph({ pageTitle: doc.title, dateModified: doc.updatedIso });
+---
+
+<BaseLayout title={doc.title} description={doc.standfirst} currentPath="/about" jsonLd={jsonLd}>
+  <DocSections kicker={doc.kicker} title={doc.title} standfirst={doc.standfirst} updated={doc.updated} sections={doc.sections} />
+</BaseLayout>

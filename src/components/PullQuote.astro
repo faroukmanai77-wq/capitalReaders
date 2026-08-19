@@ -1,0 +1,13 @@
+---
+interface Props {
+  quote: string;
+  source: string;
+}
+
+const { quote, source } = Astro.props;
+---
+
+<div style="max-width:720px; margin:10px auto 0; padding:50px 28px; text-align:center; border-top:1px solid var(--line); border-bottom:1px solid var(--line)">
+  <blockquote style="font-family:var(--serif); font-size:23px; font-style:italic; line-height:1.5; color:var(--ink)">{quote}</blockquote>
+  <cite style="display:block; margin-top:16px; font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); font-style:normal">{source}</cite>
+</div>

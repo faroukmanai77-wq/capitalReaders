@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../components/BaseLayout.astro';
+import DocSections from '../components/DocSections.astro';
+import { buildGraph } from '../lib/schema';
+
+const doc = {
+  kicker: 'Legal',
+  title: 'Affiliate disclosure',
+  standfirst:
+    "This disclosure is provided in accordance with the U.S. Federal Trade Commission's guidance on endorsements and testimonials, 16 CFR Part 255.",
+  sections: [
+    {
+      heading: 'Amazon Associates',
+      body: 'As an Amazon Associate, we earn from qualifying purchases. Some links on this site are paid links: if you click one and buy something, we may receive a commission at no additional cost to you. Prices and availability shown on Amazon are accurate as of the date and time of purchase and are subject to change.',
+    },
+    {
+      heading: 'Bookshop.org',
+      body: 'We are also an affiliate of Bookshop.org, which supports independent bookshops. Purchases made through those links may earn us a commission, again at no extra cost to you. Where both options exist we show them side by side so you can choose.',
+    },
+    {
+      heading: 'Editorial independence',
+      body: 'Affiliate relationships do not affect which books appear on this site or how they are ranked. We do not accept payment for placement, we do not accept free copies in exchange for coverage, and commission rates are identical across the books we list. Every affiliate link is marked rel="sponsored" and opens in a new tab.',
+    },
+    {
+      heading: 'Questions',
+      body: 'If anything about our commercial relationships is unclear, write to us and we will answer specifically. We would rather explain the arrangement than have you wonder about it.',
+    },
+  ],
+  updated: 'August 2026',
+  updatedIso: '2026-08-19',
+};
+
+const jsonLd = buildGraph({ pageTitle: doc.title, dateModified: doc.updatedIso });
+---
+
+<BaseLayout title={doc.title} description={doc.standfirst} currentPath="/affiliate-disclosure" jsonLd={jsonLd}>
+  <DocSections kicker={doc.kicker} title={doc.title} standfirst={doc.standfirst} updated={doc.updated} sections={doc.sections} />
+</BaseLayout>

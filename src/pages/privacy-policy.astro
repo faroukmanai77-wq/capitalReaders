@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../components/BaseLayout.astro';
+import DocSections from '../components/DocSections.astro';
+import { buildGraph } from '../lib/schema';
+
+const doc = {
+  kicker: 'Legal',
+  title: 'Privacy policy',
+  standfirst:
+    'We collect as little as possible: this site runs no advertising network, sells no data, and sets no tracking cookies of its own.',
+  sections: [
+    {
+      heading: 'What we collect',
+      body: 'If you subscribe to the newsletter we store your email address and the date you subscribed, and nothing else. Aggregate, anonymised page-view counts are collected to see which lists are read. We do not build profiles of individual visitors.',
+    },
+    {
+      heading: 'Affiliate and third-party links',
+      body: 'When you click through to Amazon or Bookshop.org, those sites may set their own cookies to attribute the referral. Their handling of your data is governed by their own privacy policies, which we do not control. Reading this site sets no such cookie.',
+    },
+    {
+      heading: 'Your rights',
+      body: 'You can unsubscribe from any email using the link in its footer, and you can ask us to delete your address entirely at any time. Requests are actioned within thirty days. If you are in the EU or UK, the usual GDPR rights of access, correction, and erasure apply.',
+    },
+    {
+      heading: 'Changes to this policy',
+      body: 'If this policy changes materially, the change will be summarised at the top of this page with a date, and newsletter subscribers will be told by email. The current version is dated August 2026.',
+    },
+  ],
+  updated: 'August 2026',
+  updatedIso: '2026-08-19',
+};
+
+const jsonLd = buildGraph({ pageTitle: doc.title, dateModified: doc.updatedIso });
+---
+
+<BaseLayout title={doc.title} description={doc.standfirst} currentPath="/privacy-policy" jsonLd={jsonLd}>
+  <DocSections kicker={doc.kicker} title={doc.title} standfirst={doc.standfirst} updated={doc.updated} sections={doc.sections} />
+</BaseLayout>

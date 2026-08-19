@@ -1,0 +1,50 @@
+---
+import { SITE } from '../config';
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer style="background:var(--navy); color:var(--footer-body)">
+  <div class="footer-wrap" style="max-width:1080px; margin:0 auto; padding:46px 28px 26px; display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:34px">
+    <div>
+      <div style="font-family:var(--serif); font-size:23px; letter-spacing:.01em; font-weight:700; color:#fff">
+        {SITE.brandFirst} <em style={`font-style:italic; color:var(--footer-wordmark-italic); font-weight:400`}>{SITE.brandSecond}</em>
+      </div>
+      <p style="font-size:12.5px; color:var(--footer-muted); max-width:32ch; margin-top:10px">
+        Curated reading lists on investing, wealth, and economics — for people who'd rather read five great books than fifty average ones.
+      </p>
+    </div>
+    <div>
+      <h4 style="font-size:11.5px; text-transform:uppercase; letter-spacing:.08em; color:#fff; margin-bottom:14px; font-weight:700">Explore</h4>
+      <div style="display:flex; flex-direction:column; gap:9px">
+        <a href="/investing/best-books-on-investing" class="footer-link" style="color:var(--footer-body); font-size:13px">Investing</a>
+        <a href="/wealth/best-books-on-building-wealth" class="footer-link" style="color:var(--footer-body); font-size:13px">Wealth</a>
+        <a href="/economics/best-books-to-understand-the-economy" class="footer-link" style="color:var(--footer-body); font-size:13px">Economics</a>
+        <a href="/personal-finance/best-books-to-get-out-of-debt" class="footer-link" style="color:var(--footer-body); font-size:13px">Personal Finance</a>
+      </div>
+    </div>
+    <div>
+      <h4 style="font-size:11.5px; text-transform:uppercase; letter-spacing:.08em; color:#fff; margin-bottom:14px; font-weight:700">About</h4>
+      <div style="display:flex; flex-direction:column; gap:9px">
+        <a href="/about" class="footer-link" style="color:var(--footer-body); font-size:13px">Our Method</a>
+        <a href="/about" class="footer-link" style="color:var(--footer-body); font-size:13px">Contact</a>
+      </div>
+    </div>
+    <div>
+      <h4 style="font-size:11.5px; text-transform:uppercase; letter-spacing:.08em; color:#fff; margin-bottom:14px; font-weight:700">Legal</h4>
+      <div style="display:flex; flex-direction:column; gap:9px">
+        <a href="/affiliate-disclosure" class="footer-link" style="color:var(--footer-body); font-size:13px">Affiliate Disclosure</a>
+        <a href="/privacy-policy" class="footer-link" style="color:var(--footer-body); font-size:13px">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.1); text-align:center; padding:18px; font-size:11.5px; color:var(--footer-bottom)">
+    © {currentYear} {SITE.brand}
+  </div>
+</footer>
+
+<style>
+  .footer-link:hover {
+    color: #fff !important;
+  }
+</style>

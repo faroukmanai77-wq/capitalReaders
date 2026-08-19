@@ -1,0 +1,90 @@
+---
+import { amazonUrl, bookshopUrl, coverAlt, gradientFor, rankLabel } from '../lib/affiliate';
+
+interface Book {
+  title: string;
+  author: string;
+  published: string;
+  blurb: string;
+  keyIdea: string;
+  bestFor: string;
+  skipIf: string;
+  amazonUrl?: string;
+  bookshopUrl?: string;
+  formats: string;
+  coverImageUrl?: string;
+}
+
+interface Props {
+  book: Book;
+  index: number;
+  headingLevel?: 'h2' | 'h3';
+  isFirst?: boolean;
+}
+
+const { book, index, headingLevel = 'h3', isFirst = false } = Astro.props;
+const Heading = headingLevel;
+const alt = coverAlt(book.title, book.author);
+const gradient = gradientFor(index);
+const amazon = amazonUrl(book.title, book.author, book.amazonUrl);
+const bookshop = bookshopUrl(book.title, book.bookshopUrl);
+---
+
+<article
+  class="book-row"
+  style={`display:grid; grid-template-columns:56px 130px 1fr; gap:26px; padding:${isFirst ? '0' : '30px'} 0 30px; border-bottom:1px solid var(--line); align-items:start`}
+>
+  <div aria-hidden="true" style="font-family:var(--serif); font-size:30px; color:var(--rank); font-weight:700; line-height:1">
+    {rankLabel(index)}
+  </div>
+
+  {book.coverImageUrl ? (
+    <img
+      class="cover"
+      src={book.coverImageUrl}
+      alt={alt}
+      width="130"
+      height="190"
+      loading="lazy"
+      decoding="async"
+      style="width:130px; height:190px; border-radius:2px; box-shadow:0 10px 22px -10px rgba(26,26,24,.35); object-fit:cover; display:block"
+    />
+  ) : (
+    <div
+      class="cover"
+      role="img"
+      aria-label={alt}
+      style={`width:130px; height:190px; border-radius:2px; box-shadow:0 10px 22px -10px rgba(26,26,24,.35); display:flex; flex-direction:column; justify-content:space-between; padding:14px 12px; color:#fff; background:${gradient}`}
+    >
+      <div style="font-family:var(--serif); font-size:13px; font-weight:700; line-height:1.25">{book.title}</div>
+      <div style="font-size:9.5px; opacity:.85; letter-spacing:.02em">{book.author}</div>
+    </div>
+  )}
+
+  <div>
+    <Heading style="font-family:var(--serif); font-size:19px; font-weight:400; margin-bottom:4px">{book.title}</Heading>
+    <div style="font-size:12.5px; color:var(--ink-soft); margin-bottom:12px; letter-spacing:.02em">by {book.author} · {book.published}</div>
+    <p style="font-size:14px; color:var(--ink-soft); margin-bottom:14px; max-width:60ch">{book.blurb}</p>
+
+    <dl style="display:grid; gap:8px; margin-bottom:16px; max-width:60ch">
+      <div style="display:grid; grid-template-columns:96px 1fr; gap:12px; align-items:baseline">
+        <dt style="font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--accent)">Core idea</dt>
+        <dd style="font-size:13.5px; color:var(--ink-soft)">{book.keyIdea}</dd>
+      </div>
+      <div style="display:grid; grid-template-columns:96px 1fr; gap:12px; align-items:baseline">
+        <dt style="font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--accent)">Read it if</dt>
+        <dd style="font-size:13.5px; color:var(--ink-soft)">{book.bestFor}</dd>
+      </div>
+      <div style="display:grid; grid-template-columns:96px 1fr; gap:12px; align-items:baseline">
+        <dt style="font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--accent)">Skip it if</dt>
+        <dd style="font-size:13.5px; color:var(--ink-soft)">{book.skipIf}</dd>
+      </div>
+    </dl>
+
+    <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap">
+      <a href={amazon} target="_blank" rel="sponsored noopener" class="buy-btn">Buy on Amazon</a>
+      <a href={bookshop} target="_blank" rel="sponsored noopener" class="buy-btn-outline">Bookshop.org</a>
+      <span style="font-size:11.5px; color:var(--ink-soft); font-style:italic">{book.formats}</span>
+    </div>
+  </div>
+</article>

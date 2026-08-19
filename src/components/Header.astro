@@ -1,0 +1,64 @@
+---
+import { SITE } from '../config';
+
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = '' } = Astro.props;
+
+const mainNav = [
+  { label: 'Investing', href: '/investing/best-books-on-investing' },
+  { label: 'Wealth', href: '/wealth/best-books-on-building-wealth' },
+  { label: 'Economics', href: '/economics/best-books-to-understand-the-economy' },
+  { label: 'Personal Finance', href: '/personal-finance/best-books-to-get-out-of-debt' },
+  { label: 'Search ⌕', href: '/search', muted: true },
+];
+
+const subNav = [
+  { label: 'Best Books on Investing', href: '/investing/best-books-on-investing' },
+  { label: 'Best Books on Wealth Building', href: '/wealth/best-books-on-building-wealth' },
+  { label: 'Best Books on Economics', href: '/economics/best-books-to-understand-the-economy' },
+  { label: 'Getting Out of Debt', href: '/personal-finance/best-books-to-get-out-of-debt' },
+];
+---
+
+<header style="border-bottom:1px solid var(--line); background:var(--paper)">
+  <div class="nav-wrap" style="max-width:1080px; margin:0 auto; padding:22px 28px 20px; display:flex; align-items:center; justify-content:space-between; gap:24px">
+    <a href="/" style="font-family:var(--serif); font-size:23px; letter-spacing:.01em; font-weight:700">
+      {SITE.brandFirst} <em style="font-style:italic; color:var(--accent); font-weight:400">{SITE.brandSecond}</em>
+    </a>
+    <nav class="main-nav" style="display:flex; gap:30px">
+      {mainNav.map((item) => (
+        <a
+          href={item.href}
+          aria-current={currentPath === item.href ? 'page' : undefined}
+          style={`text-transform:uppercase; font-weight:600; font-size:11.5px; letter-spacing:.08em; opacity:${item.muted ? '.6' : currentPath === item.href ? '1' : '.75'}; transition:opacity .15s ease, color .15s ease`}
+          class="nav-link"
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+  <div style="border-top:1px solid var(--line)">
+    <div style="max-width:1080px; margin:0 auto; padding:10px 28px; display:flex; gap:26px; flex-wrap:wrap; font-size:12px; color:var(--ink-soft)">
+      {subNav.map((item) => (
+        <a
+          href={item.href}
+          aria-current={currentPath === item.href ? 'page' : undefined}
+          style="color:var(--ink-soft); transition:color .15s ease"
+        >
+          {item.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</header>
+
+<style>
+  .nav-link:hover {
+    opacity: 1 !important;
+    color: var(--ink);
+  }
+</style>
