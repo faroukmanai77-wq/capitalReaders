@@ -23,12 +23,10 @@ export interface BuildGraphOptions {
 
 export function buildGraph(opts: BuildGraphOptions) {
   const site = SITE.url;
-  const author = {
-    '@type': 'Person',
-    name: SITE.authorName,
-    jobTitle: SITE.authorRole,
-    url: `${site}/about`,
-  };
+  // Reviews and articles are produced by the Capital Reads team, not a
+  // named individual, so authorship is attributed to the Organization
+  // rather than a fabricated Person.
+  const author = { '@id': `${site}/#org` };
 
   const graph: Record<string, unknown>[] = [
     { '@type': 'WebSite', '@id': `${site}/#website`, name: SITE.brand, url: site, publisher: { '@id': `${site}/#org` } },
