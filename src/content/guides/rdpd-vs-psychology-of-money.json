@@ -1,0 +1,52 @@
+{
+  "path": "investing/rich-dad-poor-dad-vs-the-psychology-of-money",
+  "format": "comparison",
+  "pillarPath": "investing/best-books-on-investing",
+  "category": "Investing",
+  "kicker": "Curated Reading on Money, Wealth & Economics",
+  "title": "Rich Dad Poor Dad vs The Psychology of Money: Which Should You Read First?",
+  "intro": "Both are usually the first money book someone reads, and both exist to shift how you think about money rather than teach portfolio mechanics. They do it in very different ways — one through a parable, the other through evidence — and only one of them made our investing list.",
+  "updated": "2026-08-19",
+  "seo": {
+    "title": "Rich Dad Poor Dad vs The Psychology of Money — Which First?",
+    "description": "A head-to-head on the two most common first money books: approach, rigor, and which one to actually read first."
+  },
+  "bookA": {
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8315603-L.jpg"
+  },
+  "bookB": {
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10389354-L.jpg"
+  },
+  "comparisonRows": [
+    {
+      "dimension": "Approach",
+      "a": "Narrative and parable — contrasts the money lessons of the author's biological father with his best friend's father, building the case for owning assets through story rather than data.",
+      "b": "An essay collection grounded in behavioral evidence — each short chapter isolates one psychological bias, like how luck and risk get conflated, using historical case studies rather than a single continuous story."
+    },
+    {
+      "dimension": "Key Idea",
+      "a": "An asset puts money in your pocket, a liability takes it out — and most people, including homeowners, misclassify what they own.",
+      "b": "Financial outcomes are driven by temperament and time, not intelligence or analysis."
+    },
+    {
+      "dimension": "Best For",
+      "a": "A reader who has never questioned the \"get a stable job\" script and needs a jolt to start thinking about assets at all.",
+      "b": "A reader who already wants to build wealth but keeps undoing a plan that was otherwise working."
+    },
+    {
+      "dimension": "Length & Difficulty",
+      "a": "Short and breezy — a few hours, written for someone with zero financial background.",
+      "b": "Also short, but denser per page. Each chapter is a self-contained argument rather than a story, which makes it worth rereading."
+    },
+    {
+      "dimension": "Evidence & Rigor",
+      "a": "Anecdotal, and several specific claims — including whether the \"rich dad\" figure existed — have been disputed by journalists. Best treated as a mindset book, not a technical one.",
+      "b": "Built on documented behavioral-finance research alongside Housel's own case studies. The more evidence-based of the two, and the reason it appears on our investing list and this one doesn't."
+    }
+  ],
+  "verdict": "Read Rich Dad Poor Dad first only if you need the emotional jolt to start paying attention to money at all — it's better at making someone care than at teaching them something reliable. Everyone else should start with The Psychology of Money: the mindset shift is similar, the evidence behind it is stronger, and it won't need to be partly unlearned later."
+}
