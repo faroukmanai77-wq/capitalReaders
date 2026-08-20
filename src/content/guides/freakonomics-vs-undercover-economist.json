@@ -1,0 +1,52 @@
+{
+  "path": "economics/freakonomics-vs-the-undercover-economist",
+  "format": "comparison",
+  "pillarPath": "economics/best-books-to-understand-the-economy",
+  "category": "Economics",
+  "kicker": "Curated Reading on Money, Wealth & Economics",
+  "title": "Freakonomics vs The Undercover Economist: Which Pop-Economics Book Wins?",
+  "intro": "Both came out in 2005, both made economics feel readable for people who'd never take the class, and both are still the first recommendation most people get when they ask for a fun economics book. They're built very differently, though, and one has aged noticeably better than the other.",
+  "updated": "2026-08-19",
+  "seo": {
+    "title": "Freakonomics vs The Undercover Economist — Which Wins?",
+    "description": "A head-to-head on the two defining pop-economics books of 2005: approach, rigor, and which one actually holds up."
+  },
+  "bookA": {
+    "title": "Freakonomics",
+    "author": "Steven D. Levitt & Stephen J. Dubner",
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/11172914-L.jpg"
+  },
+  "bookB": {
+    "title": "The Undercover Economist",
+    "author": "Tim Harford",
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/189956-L.jpg"
+  },
+  "comparisonRows": [
+    {
+      "dimension": "Approach",
+      "a": "A series of loosely connected case studies — sumo wrestlers, drug dealers' finances, baby names — unified by one method: applying incentive analysis to questions that don't look like economics at all. More journalism than textbook.",
+      "b": "A single throughline built around core price theory: scarcity, market power, information asymmetry. Each chapter demonstrates one concept through an everyday example, like why your coffee costs what it costs."
+    },
+    {
+      "dimension": "Key Idea",
+      "a": "People respond to incentives in ways that produce surprising, counterintuitive results — and correlation gets mistaken for causation constantly in public debate.",
+      "b": "Prices aren't arbitrary — they're information, and understanding how markets set them explains everything from a coffee markup to why some countries stay poor."
+    },
+    {
+      "dimension": "Best For",
+      "a": "A reader who wants economics as entertainment first: memorable stories that happen to teach a way of thinking.",
+      "b": "A reader who wants to actually understand how markets and prices work, not just be entertained by a clever correlation."
+    },
+    {
+      "dimension": "Length & Difficulty",
+      "a": "Fast and breezy, built for a weekend — each chapter stands alone and can be read in any order.",
+      "b": "Slightly more sequential and conceptually demanding, though still written for a reader with zero economics background."
+    },
+    {
+      "dimension": "Evidence & Rigor",
+      "a": "Several of its most famous claims — most notably the abortion-crime link — have been challenged and partially undermined by later research and methodology critiques. Treat the specific findings as provocative hypotheses, not settled science.",
+      "b": "Built on established price theory rather than novel empirical claims, which makes it far less exposed to the kind of after-the-fact debunking Freakonomics has faced. Less viral, more durable."
+    }
+  ],
+  "verdict": "Read Freakonomics for the pure enjoyment of economics as detective work — just hold its specific findings loosely, since several haven't survived scrutiny. Read The Undercover Economist if you want the ideas to still be useful a year later: less viral on publication, but built on price theory that doesn't go out of date."
+}
