@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fbfaf7" />
+
+  <!-- book + ribbon mark -->
+  <g transform="translate(568,90)">
+    <rect width="64" height="64" rx="10" fill="#1a1a18" />
+    <path d="M32,17 L12,23.5 L12,47 L32,44.5 Z" fill="#fbfaf7" />
+    <path d="M32,17 L52,23.5 L52,47 L32,44.5 Z" fill="#fbfaf7" />
+    <path d="M30,8 L34,8 L34,19 L32,16 L30,19 Z" fill="#c9756f" />
+  </g>
+
+  <text x="600" y="216" text-anchor="middle" font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="3" fill="#7a2e2e">CURATED READING ON MONEY, WEALTH &amp; ECONOMICS</text>
+
+  <text x="253" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-weight="700" fill="#1a1a18">Capital&#160;</text>
+  <text x="598" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-weight="400" font-style="italic" fill="#7a2e2e">Readers</text>
+
+  <text x="600" y="382" text-anchor="middle" font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="24" fill="#5c584f">The books that actually change how you handle money —</text>
+  <text x="600" y="416" text-anchor="middle" font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="24" fill="#5c584f">five titles at a time, ranked and explained.</text>
+
+  <rect x="540" y="472" width="120" height="3" fill="#7a2e2e" />
+</svg>

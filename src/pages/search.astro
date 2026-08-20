@@ -126,5 +126,15 @@ const allBooks = lists.flatMap((list) =>
     if (visible === 0) emptyText.textContent = `Nothing here matches “${term}”.`;
   }
 
-  input.addEventListener('input', runSearch);
+  input.addEventListener('input', () => {
+    const url = new URL(window.location.href);
+    if (input.value) url.searchParams.set('q', input.value);
+    else url.searchParams.delete('q');
+    window.history.replaceState({}, '', url);
+    runSearch();
+  });
+
+  const initialQuery = new URLSearchParams(window.location.search).get('q');
+  if (initialQuery) input.value = initialQuery;
+  runSearch();
 </script>

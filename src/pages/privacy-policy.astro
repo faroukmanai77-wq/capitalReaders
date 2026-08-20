@@ -30,7 +30,7 @@ const doc = {
   updatedIso: '2026-08-19',
 };
 
-const jsonLd = buildGraph({ pageTitle: doc.title, dateModified: doc.updatedIso });
+const jsonLd = buildGraph({ pageTitle: doc.title, dateModified: doc.updatedIso, path: '/privacy-policy' });
 ---
 
 <BaseLayout title={doc.title} description={doc.standfirst} currentPath="/privacy-policy" jsonLd={jsonLd}>

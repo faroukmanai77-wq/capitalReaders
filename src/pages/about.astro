@@ -8,6 +8,7 @@ const doc = {
   title: 'How these lists are made',
   standfirst:
     'Every list on this site is compiled by the Capital Readers team from published reviews, reader consensus, and AI-assisted research — not by a single self-styled expert. Nothing is placed, paid for, or included because it sells well.',
+  metaDescription: 'How Capital Readers researches and ranks its book lists — no fabricated experts, no paid placement, revisited monthly.',
   sections: [
     {
       heading: 'Who writes this',
@@ -38,9 +39,9 @@ const doc = {
   updatedIso: '2026-08-19',
 };
 
-const jsonLd = buildGraph({ pageTitle: doc.title, dateModified: doc.updatedIso });
+const jsonLd = buildGraph({ pageTitle: doc.title, dateModified: doc.updatedIso, path: '/about' });
 ---
 
-<BaseLayout title={doc.title} description={doc.standfirst} currentPath="/about" jsonLd={jsonLd}>
+<BaseLayout title={doc.title} description={doc.metaDescription} currentPath="/about" jsonLd={jsonLd}>
   <DocSections kicker={doc.kicker} title={doc.title} standfirst={doc.standfirst} updated={doc.updated} sections={doc.sections} />
 </BaseLayout>
