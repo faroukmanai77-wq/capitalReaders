@@ -11,7 +11,11 @@ export function amazonUrl(title: string, author: string, override?: string): str
 }
 
 export function bookshopUrl(title: string, override?: string): string {
-  if (override) return override;
+  if (override) {
+    const url = new URL(override);
+    url.searchParams.set('aid', SITE.bookshopId);
+    return url.toString();
+  }
   const q = encodeURIComponent(title);
   return `https://bookshop.org/beta-search?keywords=${q}&aid=${SITE.bookshopId}`;
 }
