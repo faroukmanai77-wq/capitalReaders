@@ -7,6 +7,7 @@ export const SITE = {
   amazonTag: 'finivo20-20',
   bookshopId: 'YOUR-BOOKSHOP-ID',
   showBookshop: false,
+  buttondownUsername: 'capitalreaders',
   authorName: 'Capital Readers Team',
   authorRole: 'researched and curated from published reviews, reader consensus, and AI-assisted analysis',
 } as const;

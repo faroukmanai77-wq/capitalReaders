@@ -1,4 +1,5 @@
 ---
+import { SITE } from '../config';
 ---
 
 <div style="background:var(--accent-soft); padding:52px 28px; text-align:center">
@@ -7,7 +8,7 @@
     <p style="font-size:13.5px; color:var(--ink-soft); margin-bottom:22px">A short, opinionated email — no filler, no fifty-book roundups. Just what's worth reading next.</p>
     <form
       style="display:flex; gap:8px; justify-content:center; flex-wrap:wrap"
-      action="https://buttondown.com/api/emails/embed-subscribe/capitalreads"
+      action={`https://buttondown.com/api/emails/embed-subscribe/${SITE.buttondownUsername}`}
       method="post"
     >
       <label for="cr-email" class="visually-hidden">Email address</label>
