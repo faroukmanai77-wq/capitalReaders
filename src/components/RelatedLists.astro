@@ -8,15 +8,18 @@ interface RelatedItem {
 
 interface Props {
   lists: RelatedItem[];
+  heading?: string;
+  viewAllHref?: string;
+  viewAllLabel?: string;
 }
 
-const { lists } = Astro.props;
+const { lists, heading = 'More Reading Lists', viewAllHref = '/', viewAllLabel = 'View All Lists →' } = Astro.props;
 ---
 
 <section style="max-width:1080px; margin:0 auto; padding:56px 28px">
   <div style="display:flex; justify-content:space-between; align-items:baseline; gap:20px; margin-bottom:28px">
-    <h2 style="font-family:var(--serif); font-size:24px; font-weight:400">More Reading Lists</h2>
-    <a href="/" style="font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--accent); font-weight:700; white-space:nowrap">View All Lists →</a>
+    <h2 style="font-family:var(--serif); font-size:24px; font-weight:400">{heading}</h2>
+    <a href={viewAllHref} style="font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--accent); font-weight:700; white-space:nowrap">{viewAllLabel}</a>
   </div>
   <div class="related-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:30px">
     {lists.map((item) => (

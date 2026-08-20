@@ -8,21 +8,37 @@ import BookRow from '../components/BookRow.astro';
 import PullQuote from '../components/PullQuote.astro';
 import MethodAndFaq from '../components/MethodAndFaq.astro';
 import RelatedLists from '../components/RelatedLists.astro';
+import PillarLink from '../components/PillarLink.astro';
 import { buildGraph } from '../lib/schema';
 import { SITE } from '../config';
 
 export async function getStaticPaths() {
   const lists = await getCollection('lists');
+  const guides = await getCollection('guides');
   return lists.map((entry) => ({
     params: { slug: entry.data.path },
-    props: { entry, allLists: lists },
+    props: { entry, allLists: lists, allGuides: guides },
   }));
 }
 
-const { entry, allLists } = Astro.props;
+const { entry, allLists, allGuides } = Astro.props;
 const list = entry.data;
 
-const related = allLists.filter((l) => l.id !== entry.id).slice(0, 3);
+// A "hub" is any list with no pillarPath of its own — currently Investing,
+// Wealth, Economics, and Personal Finance. The "More Reading Lists" strip
+// only ever shows hubs (never sub-topics), and always excludes this page's
+// own pillar hub so it isn't linked twice on a sub-topic page.
+const hubs = allLists.filter((l) => !l.data.pillarPath);
+const related = hubs.filter((h) => h.id !== entry.id && h.data.path !== list.pillarPath).slice(0, 3);
+
+// Sub-topics: any list or guide whose pillarPath points back at this page.
+// Computed, not hand-linked, so adding a new child never touches this file.
+const subTopics = [
+  ...allLists.filter((l) => l.data.pillarPath === list.path),
+  ...allGuides.filter((g) => g.data.pillarPath === list.path),
+];
+
+const parentHub = list.pillarPath ? hubs.find((h) => h.data.path === list.pillarPath) : undefined;
 
 const crumbs = [
   { label: 'Home', href: '/' },
@@ -58,6 +74,7 @@ const jsonLd = buildGraph({
 >
   <main>
     <Breadcrumb crumbs={crumbs} current={list.listKicker} />
+    {parentHub && <PillarLink hubTitle={parentHub.data.listKicker} hubHref={`/${parentHub.data.path}`} />}
     <Hero kicker={list.kicker} title={list.title} intro={list.intro} />
     <AuthorByline updated={list.updated} />
 
@@ -76,6 +93,20 @@ const jsonLd = buildGraph({
     <PullQuote quote={list.quote} source={list.quoteSource} />
 
     <MethodAndFaq methodTitle={list.methodTitle} methodBody={list.methodBody} faq={list.faq} />
+
+    {subTopics.length > 0 && (
+      <RelatedLists
+        heading="Explore This Topic Further"
+        viewAllHref={`/${list.path}`}
+        viewAllLabel="Back to This List →"
+        lists={subTopics.map((s) => ({
+          kicker: s.data.category,
+          cardTitle: s.data.title,
+          cardSummary: s.data.intro,
+          href: `/${s.data.path}`,
+        }))}
+      />
+    )}
 
     <RelatedLists
       lists={related.map((r) => ({
