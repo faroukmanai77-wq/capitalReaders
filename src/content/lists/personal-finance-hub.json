@@ -48,7 +48,8 @@
       "skipIf": "You want depth on any single topic — it's deliberately a survey.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/14850348-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0143130528"
+      "amazonUrl": "https://www.amazon.com/dp/0143130528",
+      "bookshopUrl": "https://bookshop.org/books/the-index-card-why-personal-finance-doesn-t-have-to-be-complicated/9780143130529"
     },
     {
       "rank": 2,
@@ -61,7 +62,8 @@
       "skipIf": "You already automate your savings — the book has one idea, repeated.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/14771424-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0451499085"
+      "amazonUrl": "https://www.amazon.com/dp/0451499085",
+      "bookshopUrl": "https://bookshop.org/books/the-automatic-millionaire-a-powerful-one-step-plan-to-live-and-finish-rich/9780451499080"
     },
     {
       "rank": 3,
@@ -74,7 +76,8 @@
       "skipIf": "You're outside Australia — the account structure travels, the tax and banking specifics don't.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/12411753-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1543639690"
+      "amazonUrl": "https://www.amazon.com/dp/1543639690",
+      "bookshopUrl": "https://bookshop.org/p/books/the-barefoot-investor-the-only-money-guide-you-ll-ever-need-scott-pape/10321755"
     },
     {
       "rank": 4,
@@ -87,7 +90,8 @@
       "skipIf": "You want brevity — this is the longest book on the list by a wide margin.",
       "formats": "Hardcover · Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/8051347-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1476757860"
+      "amazonUrl": "https://www.amazon.com/dp/1476757860",
+      "bookshopUrl": "https://bookshop.org/books/money-master-the-game-7-simple-steps-to-financial-freedom-9781476757865/9781476757865"
     },
     {
       "rank": 5,
@@ -100,7 +104,8 @@
       "skipIf": "You want moderate lifestyle advice — the frugality on display is extreme by design.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/11273312-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0525538690"
+      "amazonUrl": "https://www.amazon.com/dp/0525538690",
+      "bookshopUrl": "https://bookshop.org/p/books/quit-like-a-millionaire-no-gimmicks-luck-or-trust-fund-required-bryce-leung/442d7fb954aeb237"
     }
   ]
 }

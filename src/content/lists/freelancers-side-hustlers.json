@@ -49,7 +49,8 @@
       "skipIf": "You've been freelancing for years and already have these mechanics in place.",
       "formats": "Paperback · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/6429193-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0307453669"
+      "amazonUrl": "https://www.amazon.com/dp/0307453669",
+      "bookshopUrl": "https://bookshop.org/p/books/the-money-book-for-freelancers-part-timers-and-the-self-employed-the-only-personal-finance-system-for-people-with-not-so-regular-jobs-denise-kiernan/22459c0f3c3d94b1"
     },
     {
       "rank": 2,
@@ -62,7 +63,8 @@
       "skipIf": "You already run separate business accounts with a disciplined transfer system.",
       "formats": "Hardcover · Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/14624477-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1469035863"
+      "amazonUrl": "https://www.amazon.com/dp/1469035863",
+      "bookshopUrl": "https://bookshop.org/p/books/profit-first-transform-your-business-from-a-cash-eating-monster-to-a-money-making-machine-mike-michalowicz/9dcf704d2f004fe4"
     },
     {
       "rank": 3,
@@ -74,7 +76,8 @@
       "bestFor": "You want the tax mechanics explained in detail, not summarized.",
       "skipIf": "You want narrative or motivation — this is a reference book, read in sections.",
       "formats": "Paperback · Kindle",
-      "amazonUrl": "https://www.amazon.com/dp/111965873X"
+      "amazonUrl": "https://www.amazon.com/dp/111965873X",
+      "bookshopUrl": "https://bookshop.org/p/books/j-k-lasser-s-guide-to-self-employment-taxes-strategies-and-money-saving-tips-for-schedule-c-filers-barbara-weltman/c5134efc426fd9b4"
     },
     {
       "rank": 4,
@@ -87,7 +90,8 @@
       "skipIf": "You already have your rate and contract templates settled.",
       "formats": "Paperback · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/8174867-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/076116488X"
+      "amazonUrl": "https://www.amazon.com/dp/076116488X",
+      "bookshopUrl": "https://bookshop.org/p/books/the-freelancer-s-bible-everything-you-need-to-know-to-have-the-career-of-your-dreams-on-your-terms-sara-horowitz/b5a882854af850b0"
     },
     {
       "rank": 5,
@@ -100,7 +104,8 @@
       "skipIf": "You're just starting out — this book assumes you already have a functioning freelance income.",
       "formats": "Hardcover · Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/8796506-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0358213258"
+      "amazonUrl": "https://www.amazon.com/dp/0358213258",
+      "bookshopUrl": "https://bookshop.org/p/books/company-of-one-why-staying-small-is-the-next-big-thing-for-business-paul-jarvis/c16bb7b795cff89f"
     }
   ]
 }

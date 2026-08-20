@@ -15,13 +15,15 @@
     "title": "Freakonomics",
     "author": "Steven D. Levitt & Stephen J. Dubner",
     "coverImageUrl": "https://covers.openlibrary.org/b/id/11172914-L.jpg",
-    "amazonUrl": "https://www.amazon.com/dp/0063032376"
+    "amazonUrl": "https://www.amazon.com/dp/0063032376",
+    "bookshopUrl": "https://bookshop.org/p/books/freakonomics-twentieth-anniversary-edition-a-rogue-economist-explores-the-hidden-side-of-everything-stephen-j-dubner/2681224f2373cb1f"
   },
   "bookB": {
     "title": "The Undercover Economist",
     "author": "Tim Harford",
     "coverImageUrl": "https://covers.openlibrary.org/b/id/189956-L.jpg",
-    "amazonUrl": "https://www.amazon.com/dp/0345494016"
+    "amazonUrl": "https://www.amazon.com/dp/0345494016",
+    "bookshopUrl": "https://bookshop.org/p/books/the-undercover-economist-exposing-why-the-rich-are-rich-why-the-poor-are-poor-and-why-you-can-never-buya-decent-used-car-tim-harford/993be14883fe29b3"
   },
   "comparisonRows": [
     {

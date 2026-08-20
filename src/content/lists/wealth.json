@@ -48,7 +48,8 @@
       "skipIf": "Dated examples irritate you more than data persuades you.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/797467-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0743420373"
+      "amazonUrl": "https://www.amazon.com/dp/0743420373",
+      "bookshopUrl": "https://bookshop.org/books/the-millionaire-next-door-the-surprising-secrets-of-america-s-wealthy-9781589795471/9781589795471"
     },
     {
       "rank": 2,
@@ -61,7 +62,8 @@
       "skipIf": "You dislike tracking every transaction — the method depends on it.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/6975229-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0143115766"
+      "amazonUrl": "https://www.amazon.com/dp/0143115766",
+      "bookshopUrl": "https://bookshop.org/books/your-money-or-your-life-9-steps-to-transforming-your-relationship-with-money-and-achieving-financial-independence-fully-revised-and-updated-f-revis/9780143115762"
     },
     {
       "rank": 3,
@@ -74,7 +76,8 @@
       "skipIf": "You need modern specifics — there are none.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/10491331-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0451205367"
+      "amazonUrl": "https://www.amazon.com/dp/0451205367",
+      "bookshopUrl": "https://bookshop.org/books/the-richest-man-in-babylon-the-success-secrets-of-the-ancients-the-most-inspiring-book-on-wealth-ever-written-revised/9780451205360"
     },
     {
       "rank": 4,
@@ -87,7 +90,8 @@
       "skipIf": "You want depth; it is deliberately brief.",
       "formats": "Hardcover · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/10213246-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1591844649"
+      "amazonUrl": "https://www.amazon.com/dp/1591844649",
+      "bookshopUrl": "https://bookshop.org/books/the-behavior-gap-simple-ways-to-stop-doing-dumb-things-with-money-9781591844648/9781591844648"
     },
     {
       "rank": 5,
@@ -100,7 +104,8 @@
       "skipIf": "You have no savings yet — the argument doesn't apply to you.",
       "formats": "Hardcover · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/10433791-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0358567092"
+      "amazonUrl": "https://www.amazon.com/dp/0358567092",
+      "bookshopUrl": "https://bookshop.org/p/books/die-with-zero-getting-all-you-can-from-your-money-and-your-life-bill-perkins/1269b7089948d9f4"
     }
   ]
 }

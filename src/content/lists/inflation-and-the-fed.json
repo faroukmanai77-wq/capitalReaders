@@ -49,7 +49,8 @@
       "skipIf": "You want a skeptical or outside perspective — this is the Fed's own former chairman explaining the Fed.",
       "formats": "Paperback · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/7254882-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0691165572"
+      "amazonUrl": "https://www.amazon.com/dp/0691165572",
+      "bookshopUrl": "https://bookshop.org/p/books/the-federal-reserve-and-the-financial-crisis-ben-s-bernanke/da9aa79b95a7e256"
     },
     {
       "rank": 2,
@@ -62,7 +63,8 @@
       "skipIf": "You want something current — this is 1980s reporting, strongest on structure and history rather than recent policy.",
       "formats": "Paperback · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/4120490-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/067147989X"
+      "amazonUrl": "https://www.amazon.com/dp/067147989X",
+      "bookshopUrl": "https://bookshop.org/p/books/secrets-of-the-temple-how-the-federal-reserve-runs-the-country-william-greider/6f7ebb1438fcb24d"
     },
     {
       "rank": 3,
@@ -75,7 +77,8 @@
       "skipIf": "You want current policy — this is entirely about the interwar period.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/6390416-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0143116800"
+      "amazonUrl": "https://www.amazon.com/dp/0143116800",
+      "bookshopUrl": "https://bookshop.org/p/books/lords-of-finance-the-bankers-who-broke-the-world-pulitzer-prize-winner-liaquat-ahamed/fe0f7511363977fc"
     },
     {
       "rank": 4,
@@ -87,7 +90,8 @@
       "bestFor": "You want the most recent, most narrative account of central banking under real pressure.",
       "skipIf": "You've already read extensively about the 2008 crisis — the ground here is well covered elsewhere too.",
       "formats": "Hardcover · Paperback · Kindle",
-      "amazonUrl": "https://www.amazon.com/dp/0143124994"
+      "amazonUrl": "https://www.amazon.com/dp/0143124994",
+      "bookshopUrl": "https://bookshop.org/p/books/the-alchemists-three-central-bankers-and-a-world-on-fire-neil-irwin/89499cf7f261cd0d"
     },
     {
       "rank": 5,
@@ -99,7 +103,8 @@
       "bestFor": "You've read the other four and want the deepest single-topic treatment of the Fed's main tool.",
       "skipIf": "This is your first book on the subject — start with Bernanke or Ahamed instead.",
       "formats": "Hardcover · Kindle · Audiobook",
-      "amazonUrl": "https://www.amazon.com/dp/0802161782"
+      "amazonUrl": "https://www.amazon.com/dp/0802161782",
+      "bookshopUrl": "https://bookshop.org/p/books/the-price-of-time-the-real-story-of-interest-edward-chancellor/ca0031c6813a7788"
     }
   ]
 }

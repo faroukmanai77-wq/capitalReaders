@@ -48,7 +48,8 @@
       "skipIf": "You need something you can act on this week — the payoff here is slow.",
       "formats": "Hardcover · Paperback · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/36434-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0060555661"
+      "amazonUrl": "https://www.amazon.com/dp/0060555661",
+      "bookshopUrl": "https://bookshop.org/books/the-intelligent-investor-rev-ed-revised/9780060555665"
     },
     {
       "rank": 2,
@@ -61,7 +62,8 @@
       "skipIf": "You want portfolio mechanics; there are almost no numbers in it.",
       "formats": "Paperback · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/10389354-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0857197681"
+      "amazonUrl": "https://www.amazon.com/dp/0857197681",
+      "bookshopUrl": "https://bookshop.org/books/the-psychology-of-money-timeless-lessons-on-wealth-greed-and-happiness/9780857197689"
     },
     {
       "rank": 3,
@@ -74,7 +76,8 @@
       "skipIf": "You are already fully indexed and convinced — you know the conclusion.",
       "formats": "Paperback · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/246978-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1324002182"
+      "amazonUrl": "https://www.amazon.com/dp/1324002182",
+      "bookshopUrl": "https://bookshop.org/books/a-random-walk-down-wall-street-the-time-tested-strategy-for-successful-investing/9781324002185"
     },
     {
       "rank": 4,
@@ -87,7 +90,8 @@
       "skipIf": "You have no intention of researching a single company yourself.",
       "formats": "Paperback · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/788750-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0060321601"
+      "amazonUrl": "https://www.amazon.com/dp/0060321601",
+      "bookshopUrl": "https://bookshop.org/books/common-stocks-and-uncommon-profits-and-other-writings/9780471445500"
     },
     {
       "rank": 5,
@@ -100,7 +104,8 @@
       "skipIf": "You are starting out — it assumes a great deal.",
       "formats": "Hardcover",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/8337563-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1953953239"
+      "amazonUrl": "https://www.amazon.com/dp/1953953239",
+      "bookshopUrl": "https://bookshop.org/p/books/poor-charlie-s-almanack-the-essential-wit-and-wisdom-of-charles-t-munger-charles-t-munger/19009675"
     }
   ]
 }

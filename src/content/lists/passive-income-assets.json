@@ -49,7 +49,8 @@
       "skipIf": "You've already picked a lane — the book's breadth becomes a weakness once you need depth.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/10381786-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1706203020"
+      "amazonUrl": "https://www.amazon.com/dp/1706203020",
+      "bookshopUrl": "https://bookshop.org/p/books/passive-income-aggressive-retirement-the-secret-to-freedom-flexibility-and-financial-independence-how-to-get-started/95db6dade147f58c"
     },
     {
       "rank": 2,
@@ -61,7 +62,8 @@
       "bestFor": "You want passive income through a normal brokerage account, with no tenants or products involved.",
       "skipIf": "You want growth-stock investing — this is specifically about income, not appreciation.",
       "formats": "Hardcover · Kindle",
-      "amazonUrl": "https://www.amazon.com/dp/1119985552"
+      "amazonUrl": "https://www.amazon.com/dp/1119985552",
+      "bookshopUrl": "https://bookshop.org/p/books/get-rich-with-dividends-a-proven-system-for-earning-double-digit-returns-marc-lichtenfeld/1368ac31312b2f26"
     },
     {
       "rank": 3,
@@ -74,7 +76,8 @@
       "skipIf": "You want the higher-level model of who succeeds at this and why — that's Keller's book, not this one.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/8731272-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/099071179X"
+      "amazonUrl": "https://www.amazon.com/dp/099071179X",
+      "bookshopUrl": "https://bookshop.org/p/books/the-book-on-rental-property-investing-how-to-create-wealth-with-intelligent-buy-and-hold-real-estate-investing-brandon-turner/467701d4d1b75732"
     },
     {
       "rank": 4,
@@ -87,7 +90,8 @@
       "skipIf": "You want step-by-step tactics for your first property — pair this with Turner's book, not instead of it.",
       "formats": "Hardcover · Paperback · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/60168-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0071446370"
+      "amazonUrl": "https://www.amazon.com/dp/0071446370",
+      "bookshopUrl": "https://bookshop.org/p/books/the-millionaire-real-estate-investor-dave-jenks/4918bdedd9e98b33"
     },
     {
       "rank": 5,
@@ -100,7 +104,8 @@
       "skipIf": "You want investing-specific advice — the lifestyle and productivity content here goes well beyond money.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/539652-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0307465357"
+      "amazonUrl": "https://www.amazon.com/dp/0307465357",
+      "bookshopUrl": "https://bookshop.org/p/books/the-4-hour-workweek-expanded-and-updated-expanded-and-updated-with-over-100-new-pages-of-cutting-edge-content-timothy-ferriss/c1d89b99251fea13"
     }
   ]
 }

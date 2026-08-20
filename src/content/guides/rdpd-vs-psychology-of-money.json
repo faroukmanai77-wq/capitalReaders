@@ -15,13 +15,15 @@
     "title": "Rich Dad Poor Dad",
     "author": "Robert Kiyosaki",
     "coverImageUrl": "https://covers.openlibrary.org/b/id/8315603-L.jpg",
-    "amazonUrl": "https://www.amazon.com/dp/1612680194"
+    "amazonUrl": "https://www.amazon.com/dp/1612680194",
+    "bookshopUrl": "https://bookshop.org/p/books/rich-dad-poor-dad-robert-t-kiyosaki/22400824"
   },
   "bookB": {
     "title": "The Psychology of Money",
     "author": "Morgan Housel",
     "coverImageUrl": "https://covers.openlibrary.org/b/id/10389354-L.jpg",
-    "amazonUrl": "https://www.amazon.com/dp/0857197681"
+    "amazonUrl": "https://www.amazon.com/dp/0857197681",
+    "bookshopUrl": "https://bookshop.org/books/the-psychology-of-money-timeless-lessons-on-wealth-greed-and-happiness/9780857197689"
   },
   "comparisonRows": [
     {

@@ -49,7 +49,8 @@
       "skipIf": "You already have a plan you're happy with — the pitch here is deliberately combative.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/7892520-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0984358102"
+      "amazonUrl": "https://www.amazon.com/dp/0984358102",
+      "bookshopUrl": "https://bookshop.org/p/books/the-millionaire-fastlane-crack-the-code-to-wealth-and-live-rich-for-a-lifetime-m-j-demarco/83cdf52eae0efc0e"
     },
     {
       "rank": 2,
@@ -62,7 +63,8 @@
       "skipIf": "You've already optimized housing and transportation — the specific tactics here won't be new.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/13236550-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1947200801"
+      "amazonUrl": "https://www.amazon.com/dp/1947200801",
+      "bookshopUrl": "https://bookshop.org/p/books/set-for-life-an-all-out-approach-to-early-financial-freedom-scott-trench/47d28f6737d62278"
     },
     {
       "rank": 3,
@@ -75,7 +77,8 @@
       "skipIf": "You're not interested in building income streams beyond a primary job.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/8807095-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0525540881"
+      "amazonUrl": "https://www.amazon.com/dp/0525540881",
+      "bookshopUrl": "https://bookshop.org/p/books/financial-freedom-a-proven-path-to-all-the-money-you-will-ever-need-grant-sabatier/6e6b989dde77c7b1"
     },
     {
       "rank": 4,
@@ -88,7 +91,8 @@
       "skipIf": "You've already read Malkiel or Housel from our investing list — the core argument overlaps significantly.",
       "formats": "Paperback · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/306608-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1119847672"
+      "amazonUrl": "https://www.amazon.com/dp/1119847672",
+      "bookshopUrl": "https://bookshop.org/p/books/the-bogleheads-guide-to-investing-mel-lindauer/084ad30ac05930b2"
     },
     {
       "rank": 5,
@@ -101,7 +105,8 @@
       "skipIf": "You're still early in the sequence — this book assumes steps one through four are already working.",
       "formats": "Hardcover · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/10433791-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0358567092"
+      "amazonUrl": "https://www.amazon.com/dp/0358567092",
+      "bookshopUrl": "https://bookshop.org/p/books/die-with-zero-getting-all-you-can-from-your-money-and-your-life-bill-perkins/1269b7089948d9f4"
     }
   ]
 }

@@ -49,7 +49,8 @@
       "skipIf": "You want interest-rate optimality, or the moralising tone will lose you.",
       "formats": "Hardcover · Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/6873839-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/159555078X"
+      "amazonUrl": "https://www.amazon.com/dp/159555078X",
+      "bookshopUrl": "https://bookshop.org/books/the-total-money-makeover-classic-edition-a-proven-plan-for-financial-fitness-9781595555274/9781595555274"
     },
     {
       "rank": 2,
@@ -62,7 +63,8 @@
       "skipIf": "You are outside the US — the account specifics won't map.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/6305971-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1523505745"
+      "amazonUrl": "https://www.amazon.com/dp/1523505745",
+      "bookshopUrl": "https://bookshop.org/books/i-will-teach-you-to-be-rich-second-edition-no-guilt-no-excuses-no-bs-just-a-6-week-program-that-works/9781523505746"
     },
     {
       "rank": 3,
@@ -75,7 +77,8 @@
       "skipIf": "You want detail on credit repair or negotiation.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/10448941-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1533667926"
+      "amazonUrl": "https://www.amazon.com/dp/1533667926",
+      "bookshopUrl": "https://bookshop.org/books/the-simple-path-to-wealth-your-road-map-to-financial-independence-and-a-rich-free-life/9781533667922"
     },
     {
       "rank": 4,
@@ -88,7 +91,8 @@
       "skipIf": "You are mid-career with a settled balance sheet.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/14626166-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0143130404"
+      "amazonUrl": "https://www.amazon.com/dp/0143130404",
+      "bookshopUrl": "https://bookshop.org/books/broke-millennial-stop-scraping-by-and-get-your-financial-life-together/9780143130406"
     },
     {
       "rank": 5,
@@ -101,7 +105,8 @@
       "skipIf": "You want a single-focus payoff plan and nothing else.",
       "formats": "Hardcover · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/10955890-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0593232747"
+      "amazonUrl": "https://www.amazon.com/dp/0593232747",
+      "bookshopUrl": "https://bookshop.org/books/get-good-with-money-ten-simple-steps-to-becoming-financially-whole/9780593232743"
     }
   ]
 }

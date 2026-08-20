@@ -48,7 +48,8 @@
       "skipIf": "You want a short read — get an abridged edition instead.",
       "formats": "Hardcover · Paperback · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/12816911-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1505577128"
+      "amazonUrl": "https://www.amazon.com/dp/1505577128",
+      "bookshopUrl": "https://bookshop.org/p/books/the-wealth-of-nations-adam-smith/ddfca9db36e7c3e1"
     },
     {
       "rank": 2,
@@ -61,7 +62,8 @@
       "skipIf": "You want settled consensus — this book is disputed on specifics.",
       "formats": "Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/6299464-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/1612194192"
+      "amazonUrl": "https://www.amazon.com/dp/1612194192",
+      "bookshopUrl": "https://bookshop.org/books/debt-updated-and-expanded-the-first-5-000-years/9781612194196"
     },
     {
       "rank": 3,
@@ -74,7 +76,8 @@
       "skipIf": "You want forecasting rules — it explains, it does not predict timing.",
       "formats": "Hardcover · Paperback · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/4416578-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/303116007X"
+      "amazonUrl": "https://www.amazon.com/dp/303116007X",
+      "bookshopUrl": "https://bookshop.org/p/books/manias-panics-and-crashes-a-history-of-financial-crises-seventh-edition-ford-international-professor-of-economics-charles-p-kindleberger/NcXVEsqaTbg4sCYe"
     },
     {
       "rank": 4,
@@ -87,7 +90,8 @@
       "skipIf": "Charts and data tables are not how you like to read.",
       "formats": "Paperback · Kindle",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/10193793-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0691152640"
+      "amazonUrl": "https://www.amazon.com/dp/0691152640",
+      "bookshopUrl": "https://bookshop.org/p/books/this-time-is-different-eight-centuries-of-financial-folly-carmen-m-reinhart/6862878"
     },
     {
       "rank": 5,
@@ -100,7 +104,8 @@
       "skipIf": "Six hundred pages is not the commitment you had in mind.",
       "formats": "Hardcover · Paperback · Kindle · Audiobook",
       "coverImageUrl": "https://covers.openlibrary.org/b/id/7274591-L.jpg",
-      "amazonUrl": "https://www.amazon.com/dp/0674979850"
+      "amazonUrl": "https://www.amazon.com/dp/0674979850",
+      "bookshopUrl": "https://bookshop.org/books/capital-in-the-twenty-first-century-9780674430006/9780674979857"
     }
   ]
 }
