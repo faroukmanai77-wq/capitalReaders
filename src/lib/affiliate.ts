@@ -1,7 +1,11 @@
 import { SITE } from '../config';
 
 export function amazonUrl(title: string, author: string, override?: string): string {
-  if (override) return override;
+  if (override) {
+    const url = new URL(override);
+    url.searchParams.set('tag', SITE.amazonTag);
+    return url.toString();
+  }
   const q = encodeURIComponent(`${title} ${author}`);
   return `https://www.amazon.com/s?k=${q}&tag=${SITE.amazonTag}`;
 }

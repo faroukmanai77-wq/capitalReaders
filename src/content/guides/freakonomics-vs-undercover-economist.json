@@ -14,12 +14,14 @@
   "bookA": {
     "title": "Freakonomics",
     "author": "Steven D. Levitt & Stephen J. Dubner",
-    "coverImageUrl": "https://covers.openlibrary.org/b/id/11172914-L.jpg"
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/11172914-L.jpg",
+    "amazonUrl": "https://www.amazon.com/dp/0063032376"
   },
   "bookB": {
     "title": "The Undercover Economist",
     "author": "Tim Harford",
-    "coverImageUrl": "https://covers.openlibrary.org/b/id/189956-L.jpg"
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/189956-L.jpg",
+    "amazonUrl": "https://www.amazon.com/dp/0345494016"
   },
   "comparisonRows": [
     {

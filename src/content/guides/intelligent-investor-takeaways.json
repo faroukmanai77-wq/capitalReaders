@@ -14,7 +14,8 @@
   "book": {
     "title": "The Intelligent Investor",
     "author": "Benjamin Graham",
-    "coverImageUrl": "https://covers.openlibrary.org/b/id/36434-L.jpg"
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/36434-L.jpg",
+    "amazonUrl": "https://www.amazon.com/dp/0060555661"
   },
   "takeaways": [
     {

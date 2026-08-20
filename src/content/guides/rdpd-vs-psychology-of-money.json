@@ -14,12 +14,14 @@
   "bookA": {
     "title": "Rich Dad Poor Dad",
     "author": "Robert Kiyosaki",
-    "coverImageUrl": "https://covers.openlibrary.org/b/id/8315603-L.jpg"
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8315603-L.jpg",
+    "amazonUrl": "https://www.amazon.com/dp/1612680194"
   },
   "bookB": {
     "title": "The Psychology of Money",
     "author": "Morgan Housel",
-    "coverImageUrl": "https://covers.openlibrary.org/b/id/10389354-L.jpg"
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10389354-L.jpg",
+    "amazonUrl": "https://www.amazon.com/dp/0857197681"
   },
   "comparisonRows": [
     {

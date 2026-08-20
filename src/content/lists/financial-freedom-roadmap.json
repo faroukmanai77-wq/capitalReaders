@@ -15,10 +15,22 @@
   "methodTitle": "Why this order, specifically",
   "methodBody": "The sequence matters more than any individual title here. DeMarco goes first because the other four only make sense if you've already questioned the default \"get rich slowly\" script. Trench follows with the mechanical foundation — a real savings rate, built from the three biggest expense categories rather than small cuts. Sabatier comes third because once there's a savings rate, the faster lever is income, and he's specific about the number you're actually working toward. Larimore, Lindauer, and LeBoeuf take the money that system produces and put it somewhere boring and reliable. Perkins closes the sequence deliberately: every book before his is about accumulation, and his is the only one that asks what the accumulation was for. Swap the order and step four in particular stops making sense — there's nothing to invest until steps two and three are working.",
   "faq": [
-    { "q": "Why isn't this ranked by quality like your other lists?", "a": "Because ranking would misrepresent it. These five books solve different, sequential problems — mindset, savings rate, income, investing, and spending — and reading them out of order means arriving at later steps without the foundation they assume." },
-    { "q": "Can I skip a step if it doesn't apply to me?", "a": "Skip DeMarco if you're already convinced wealth is worth pursuing deliberately. Don't skip Trench or Sabatier even if they look basic — steps four and five both assume the savings rate and income work from steps two and three are already done." },
-    { "q": "How does this connect to your other lists?", "a": "Step four overlaps with our investing list — read The Bogleheads' Guide to Investing here, or Malkiel and Housel there, not necessarily all three. If you're carrying debt, our debt list comes before step two, not after it." },
-    { "q": "Is any of this advice, formally?", "a": "No. This is a reading sequence, not personalised financial advice, and \"financial freedom\" means something different depending on your income, debts, and goals — none of which a book can know." }
+    {
+      "q": "Why isn't this ranked by quality like your other lists?",
+      "a": "Because ranking would misrepresent it. These five books solve different, sequential problems — mindset, savings rate, income, investing, and spending — and reading them out of order means arriving at later steps without the foundation they assume."
+    },
+    {
+      "q": "Can I skip a step if it doesn't apply to me?",
+      "a": "Skip DeMarco if you're already convinced wealth is worth pursuing deliberately. Don't skip Trench or Sabatier even if they look basic — steps four and five both assume the savings rate and income work from steps two and three are already done."
+    },
+    {
+      "q": "How does this connect to your other lists?",
+      "a": "Step four overlaps with our investing list — read The Bogleheads' Guide to Investing here, or Malkiel and Housel there, not necessarily all three. If you're carrying debt, our debt list comes before step two, not after it."
+    },
+    {
+      "q": "Is any of this advice, formally?",
+      "a": "No. This is a reading sequence, not personalised financial advice, and \"financial freedom\" means something different depending on your income, debts, and goals — none of which a book can know."
+    }
   ],
   "updated": "2026-08-19",
   "seo": {
@@ -26,10 +38,70 @@
     "description": "A 5-book reading sequence toward financial freedom — mindset, savings rate, income, investing, and what to do once you have it."
   },
   "books": [
-    { "rank": 1, "title": "The Millionaire Fastlane", "author": "MJ DeMarco", "published": "2011", "blurb": "The starting point because it attacks the assumption everything else on this list takes for granted: that wealth is built slowly, through decades of a stable job and a diversified portfolio. DeMarco's case for building or buying a scalable asset instead is aggressive and occasionally overstated, but it's the right book to shake loose a mental model before you spend years inside it.", "keyIdea": "The default path to wealth works, but it's not the only lane — and assuming it's the only one closes off faster paths worth at least considering.", "bestFor": "You've accepted \"get rich slowly\" as the only option and haven't actually examined it.", "skipIf": "You already have a plan you're happy with — the pitch here is deliberately combative.", "formats": "Paperback · Kindle · Audiobook", "coverImageUrl": "https://covers.openlibrary.org/b/id/7892520-L.jpg" },
-    { "rank": 2, "title": "Set for Life", "author": "Scott Trench", "published": "2017", "blurb": "Once the mindset is unstuck, this is the mechanical follow-up: an aggressive plan to compress the distance between your income and your expenses by attacking the three biggest line items — housing, transportation, and food — rather than trimming coffee purchases. The goal isn't frugality for its own sake, it's runway.", "keyIdea": "Financial freedom is a function of the gap between income and expenses, and the three biggest expense categories are where that gap actually gets built.", "bestFor": "You have decent income but no real savings rate yet.", "skipIf": "You've already optimized housing and transportation — the specific tactics here won't be new.", "formats": "Paperback · Kindle · Audiobook", "coverImageUrl": "https://covers.openlibrary.org/b/id/13236550-L.jpg" },
-    { "rank": 3, "title": "Financial Freedom", "author": "Grant Sabatier", "published": "2019", "blurb": "With a savings rate in place, the next step is defining the actual target and building income beyond a single salary to hit it faster. Sabatier is candid about having done this in five years from a low starting point, and the book is as much about side income and negotiating pay as it is about spending less.", "keyIdea": "Financial freedom has a specific, calculable number attached to it, and increasing income moves you toward it faster than cutting expenses does past a certain point.", "bestFor": "You want to calculate your actual number and a timeline, not just a general direction.", "skipIf": "You're not interested in building income streams beyond a primary job.", "formats": "Paperback · Kindle · Audiobook", "coverImageUrl": "https://covers.openlibrary.org/b/id/8807095-L.jpg" },
-    { "rank": 4, "title": "The Bogleheads' Guide to Investing", "author": "Taylor Larimore, Mel Lindauer & Michael LeBoeuf", "published": "2006", "blurb": "Once there's real money to put somewhere, this is the least glamorous and most reliable answer: low-cost index funds, a simple asset allocation, and leaving it alone. Written by moderators of the Bogleheads forum rather than a single celebrity author, which shows in how little it tries to sell you.", "keyIdea": "A boring, low-cost, broadly diversified portfolio outperforms most attempts to be clever, and the evidence for that is no longer seriously contested.", "bestFor": "You're ready to actually invest the savings rate you've built and want the simplest reliable answer.", "skipIf": "You've already read Malkiel or Housel from our investing list — the core argument overlaps significantly.", "formats": "Paperback · Kindle", "coverImageUrl": "https://covers.openlibrary.org/b/id/306608-L.jpg" },
-    { "rank": 5, "title": "Die With Zero", "author": "Bill Perkins", "published": "2020", "blurb": "The roadmap's deliberate final step, and the one most accumulation-focused books skip entirely: once the system above is working, the risk shifts from under-saving to over-saving indefinitely. Perkins argues for spending deliberately against a finite life, not just building a portfolio that grows forever.", "keyIdea": "A financial freedom plan with no spending phase isn't actually freedom — it's accumulation with better vocabulary.", "bestFor": "You've built a working system and haven't thought yet about what it's actually for.", "skipIf": "You're still early in the sequence — this book assumes steps one through four are already working.", "formats": "Hardcover · Kindle · Audiobook", "coverImageUrl": "https://covers.openlibrary.org/b/id/10433791-L.jpg" }
+    {
+      "rank": 1,
+      "title": "The Millionaire Fastlane",
+      "author": "MJ DeMarco",
+      "published": "2011",
+      "blurb": "The starting point because it attacks the assumption everything else on this list takes for granted: that wealth is built slowly, through decades of a stable job and a diversified portfolio. DeMarco's case for building or buying a scalable asset instead is aggressive and occasionally overstated, but it's the right book to shake loose a mental model before you spend years inside it.",
+      "keyIdea": "The default path to wealth works, but it's not the only lane — and assuming it's the only one closes off faster paths worth at least considering.",
+      "bestFor": "You've accepted \"get rich slowly\" as the only option and haven't actually examined it.",
+      "skipIf": "You already have a plan you're happy with — the pitch here is deliberately combative.",
+      "formats": "Paperback · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/7892520-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0984358102"
+    },
+    {
+      "rank": 2,
+      "title": "Set for Life",
+      "author": "Scott Trench",
+      "published": "2017",
+      "blurb": "Once the mindset is unstuck, this is the mechanical follow-up: an aggressive plan to compress the distance between your income and your expenses by attacking the three biggest line items — housing, transportation, and food — rather than trimming coffee purchases. The goal isn't frugality for its own sake, it's runway.",
+      "keyIdea": "Financial freedom is a function of the gap between income and expenses, and the three biggest expense categories are where that gap actually gets built.",
+      "bestFor": "You have decent income but no real savings rate yet.",
+      "skipIf": "You've already optimized housing and transportation — the specific tactics here won't be new.",
+      "formats": "Paperback · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/13236550-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/1947200801"
+    },
+    {
+      "rank": 3,
+      "title": "Financial Freedom",
+      "author": "Grant Sabatier",
+      "published": "2019",
+      "blurb": "With a savings rate in place, the next step is defining the actual target and building income beyond a single salary to hit it faster. Sabatier is candid about having done this in five years from a low starting point, and the book is as much about side income and negotiating pay as it is about spending less.",
+      "keyIdea": "Financial freedom has a specific, calculable number attached to it, and increasing income moves you toward it faster than cutting expenses does past a certain point.",
+      "bestFor": "You want to calculate your actual number and a timeline, not just a general direction.",
+      "skipIf": "You're not interested in building income streams beyond a primary job.",
+      "formats": "Paperback · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/8807095-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0525540881"
+    },
+    {
+      "rank": 4,
+      "title": "The Bogleheads' Guide to Investing",
+      "author": "Taylor Larimore, Mel Lindauer & Michael LeBoeuf",
+      "published": "2006",
+      "blurb": "Once there's real money to put somewhere, this is the least glamorous and most reliable answer: low-cost index funds, a simple asset allocation, and leaving it alone. Written by moderators of the Bogleheads forum rather than a single celebrity author, which shows in how little it tries to sell you.",
+      "keyIdea": "A boring, low-cost, broadly diversified portfolio outperforms most attempts to be clever, and the evidence for that is no longer seriously contested.",
+      "bestFor": "You're ready to actually invest the savings rate you've built and want the simplest reliable answer.",
+      "skipIf": "You've already read Malkiel or Housel from our investing list — the core argument overlaps significantly.",
+      "formats": "Paperback · Kindle",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/306608-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/1119847672"
+    },
+    {
+      "rank": 5,
+      "title": "Die With Zero",
+      "author": "Bill Perkins",
+      "published": "2020",
+      "blurb": "The roadmap's deliberate final step, and the one most accumulation-focused books skip entirely: once the system above is working, the risk shifts from under-saving to over-saving indefinitely. Perkins argues for spending deliberately against a finite life, not just building a portfolio that grows forever.",
+      "keyIdea": "A financial freedom plan with no spending phase isn't actually freedom — it's accumulation with better vocabulary.",
+      "bestFor": "You've built a working system and haven't thought yet about what it's actually for.",
+      "skipIf": "You're still early in the sequence — this book assumes steps one through four are already working.",
+      "formats": "Hardcover · Kindle · Audiobook",
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10433791-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0358567092"
+    }
   ]
 }

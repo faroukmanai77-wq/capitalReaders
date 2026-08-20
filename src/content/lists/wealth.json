@@ -47,7 +47,8 @@
       "bestFor": "You earn well and cannot work out where it goes.",
       "skipIf": "Dated examples irritate you more than data persuades you.",
       "formats": "Paperback · Kindle · Audiobook",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/797467-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/797467-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0743420373"
     },
     {
       "rank": 2,
@@ -59,7 +60,8 @@
       "bestFor": "You want a complete programme, not a set of principles.",
       "skipIf": "You dislike tracking every transaction — the method depends on it.",
       "formats": "Paperback · Kindle · Audiobook",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/6975229-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/6975229-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0143115766"
     },
     {
       "rank": 3,
@@ -71,7 +73,8 @@
       "bestFor": "You want the rules in an evening, in a form you will remember.",
       "skipIf": "You need modern specifics — there are none.",
       "formats": "Paperback · Kindle · Audiobook",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/10491331-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10491331-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0451205367"
     },
     {
       "rank": 4,
@@ -83,7 +86,8 @@
       "bestFor": "You have a plan and keep intervening in it.",
       "skipIf": "You want depth; it is deliberately brief.",
       "formats": "Hardcover · Kindle",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/10213246-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10213246-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/1591844649"
     },
     {
       "rank": 5,
@@ -95,7 +99,8 @@
       "bestFor": "You save compulsively and never spend any of it.",
       "skipIf": "You have no savings yet — the argument doesn't apply to you.",
       "formats": "Hardcover · Kindle · Audiobook",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/10433791-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10433791-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0358567092"
     }
   ]
 }

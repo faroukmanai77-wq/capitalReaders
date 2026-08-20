@@ -48,7 +48,8 @@
       "bestFor": "You have started and abandoned a payoff plan before.",
       "skipIf": "You want interest-rate optimality, or the moralising tone will lose you.",
       "formats": "Hardcover · Paperback · Kindle · Audiobook",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/6873839-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/6873839-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/159555078X"
     },
     {
       "rank": 2,
@@ -60,7 +61,8 @@
       "bestFor": "You want a system built in six weeks and then left alone.",
       "skipIf": "You are outside the US — the account specifics won't map.",
       "formats": "Paperback · Kindle · Audiobook",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/6305971-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/6305971-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/1523505745"
     },
     {
       "rank": 3,
@@ -72,7 +74,8 @@
       "bestFor": "You want the whole argument in a single short book.",
       "skipIf": "You want detail on credit repair or negotiation.",
       "formats": "Paperback · Kindle · Audiobook",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/10448941-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10448941-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/1533667926"
     },
     {
       "rank": 4,
@@ -84,7 +87,8 @@
       "bestFor": "You are carrying student loans and building credit from nothing.",
       "skipIf": "You are mid-career with a settled balance sheet.",
       "formats": "Paperback · Kindle · Audiobook",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/14626166-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/14626166-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0143130404"
     },
     {
       "rank": 5,
@@ -96,7 +100,8 @@
       "bestFor": "An emergency has derailed your repayment before.",
       "skipIf": "You want a single-focus payoff plan and nothing else.",
       "formats": "Hardcover · Kindle · Audiobook",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/10955890-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10955890-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0593232747"
     }
   ]
 }

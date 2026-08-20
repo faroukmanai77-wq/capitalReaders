@@ -47,7 +47,8 @@
       "bestFor": "You want a permanent framework rather than a strategy for this market.",
       "skipIf": "You need something you can act on this week — the payoff here is slow.",
       "formats": "Hardcover · Paperback · Kindle",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/36434-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/36434-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0060555661"
     },
     {
       "rank": 2,
@@ -59,7 +60,8 @@
       "bestFor": "This is your first finance book, or you keep undoing a plan that was working.",
       "skipIf": "You want portfolio mechanics; there are almost no numbers in it.",
       "formats": "Paperback · Audiobook",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/10389354-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10389354-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0857197681"
     },
     {
       "rank": 3,
@@ -71,7 +73,8 @@
       "bestFor": "You are deciding between picking stocks and buying the whole market.",
       "skipIf": "You are already fully indexed and convinced — you know the conclusion.",
       "formats": "Paperback · Kindle",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/246978-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/246978-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/1324002182"
     },
     {
       "rank": 4,
@@ -83,7 +86,8 @@
       "bestFor": "You want to analyse individual companies and need a qualitative method.",
       "skipIf": "You have no intention of researching a single company yourself.",
       "formats": "Paperback · Kindle",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/788750-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/788750-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0060321601"
     },
     {
       "rank": 5,
@@ -95,7 +99,8 @@
       "bestFor": "You have read the other four and want the thinking behind them.",
       "skipIf": "You are starting out — it assumes a great deal.",
       "formats": "Hardcover",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/8337563-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/8337563-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/1953953239"
     }
   ]
 }

@@ -47,7 +47,8 @@
       "bestFor": "You want to know what Smith actually wrote rather than what he is quoted as writing.",
       "skipIf": "You want a short read — get an abridged edition instead.",
       "formats": "Hardcover · Paperback · Kindle",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/12816911-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/12816911-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/1505577128"
     },
     {
       "rank": 2,
@@ -59,7 +60,8 @@
       "bestFor": "You want the assumptions behind the textbook story examined.",
       "skipIf": "You want settled consensus — this book is disputed on specifics.",
       "formats": "Paperback · Kindle · Audiobook",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/6299464-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/6299464-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/1612194192"
     },
     {
       "rank": 3,
@@ -71,7 +73,8 @@
       "bestFor": "You want one framework that explains every crash you have lived through.",
       "skipIf": "You want forecasting rules — it explains, it does not predict timing.",
       "formats": "Hardcover · Paperback · Kindle",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/4416578-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/4416578-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/303116007X"
     },
     {
       "rank": 4,
@@ -83,7 +86,8 @@
       "bestFor": "You want the evidence base rather than the narrative.",
       "skipIf": "Charts and data tables are not how you like to read.",
       "formats": "Paperback · Kindle",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/10193793-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/10193793-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0691152640"
     },
     {
       "rank": 5,
@@ -95,7 +99,8 @@
       "bestFor": "You want to understand the inequality debate from its most cited source.",
       "skipIf": "Six hundred pages is not the commitment you had in mind.",
       "formats": "Hardcover · Paperback · Kindle · Audiobook",
-      "coverImageUrl": "https://covers.openlibrary.org/b/id/7274591-L.jpg"
+      "coverImageUrl": "https://covers.openlibrary.org/b/id/7274591-L.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0674979850"
     }
   ]
 }
