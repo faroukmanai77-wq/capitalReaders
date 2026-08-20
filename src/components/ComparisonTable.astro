@@ -1,0 +1,116 @@
+---
+import { amazonUrl, bookshopUrl, coverAlt, gradientFor } from '../lib/affiliate';
+import { SITE } from '../config';
+
+interface Book {
+  title: string;
+  author: string;
+  coverImageUrl?: string;
+  amazonUrl?: string;
+  bookshopUrl?: string;
+}
+
+interface Row {
+  dimension: string;
+  a: string;
+  b: string;
+}
+
+interface Props {
+  bookA: Book;
+  bookB: Book;
+  rows: Row[];
+  verdict?: string;
+}
+
+const { bookA, bookB, rows, verdict } = Astro.props;
+
+function renderCover(book: Book, index: number) {
+  const alt = coverAlt(book.title, book.author);
+  const gradient = gradientFor(index);
+  return { alt, gradient };
+}
+
+const coverA = renderCover(bookA, 0);
+const coverB = renderCover(bookB, 1);
+const amazonA = amazonUrl(bookA.title, bookA.author, bookA.amazonUrl);
+const amazonB = amazonUrl(bookB.title, bookB.author, bookB.amazonUrl);
+const bookshopA = bookshopUrl(bookA.title, bookA.bookshopUrl);
+const bookshopB = bookshopUrl(bookB.title, bookB.bookshopUrl);
+---
+
+<section style="max-width:900px; margin:0 auto; padding:52px 28px 0">
+  <div class="compare-books" style="display:grid; grid-template-columns:1fr 1fr; gap:30px; padding-bottom:40px">
+    {[
+      { book: bookA, cover: coverA, amazon: amazonA, bookshop: bookshopA },
+      { book: bookB, cover: coverB, amazon: amazonB, bookshop: bookshopB },
+    ].map(({ book, cover, amazon, bookshop }) => (
+      <div style="text-align:center">
+        {book.coverImageUrl ? (
+          <img
+            src={book.coverImageUrl}
+            alt={cover.alt}
+            width="130"
+            height="190"
+            loading="eager"
+            decoding="async"
+            style="width:130px; height:190px; border-radius:2px; box-shadow:0 10px 22px -10px rgba(26,26,24,.35); object-fit:cover; display:block; margin:0 auto"
+          />
+        ) : (
+          <div
+            role="img"
+            aria-label={cover.alt}
+            style={`width:130px; height:190px; border-radius:2px; box-shadow:0 10px 22px -10px rgba(26,26,24,.35); display:flex; flex-direction:column; justify-content:space-between; padding:14px 12px; color:#fff; background:${cover.gradient}; margin:0 auto; text-align:left`}
+          >
+            <div style="font-family:var(--serif); font-size:13px; font-weight:700; line-height:1.25">{book.title}</div>
+            <div style="font-size:9.5px; opacity:.85; letter-spacing:.02em">{book.author}</div>
+          </div>
+        )}
+        <h2 style="font-family:var(--serif); font-size:19px; font-weight:400; margin-top:16px">{book.title}</h2>
+        <div style="font-size:12.5px; color:var(--ink-soft); margin-top:4px; margin-bottom:16px">by {book.author}</div>
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center">
+          <a href={amazon} target="_blank" rel="sponsored noopener" class="buy-btn">Buy on Amazon</a>
+          {SITE.showBookshop && (
+            <a href={bookshop} target="_blank" rel="sponsored noopener" class="buy-btn-outline">Bookshop.org</a>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div style="overflow-x:auto; border-top:1px solid var(--line)">
+    <table style="width:100%; border-collapse:collapse; font-size:14px">
+      <thead>
+        <tr>
+          <th style="text-align:left; padding:14px 12px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); border-bottom:1px solid var(--line); width:22%">Dimension</th>
+          <th style="text-align:left; padding:14px 12px; font-family:var(--serif); font-size:15px; font-weight:400; border-bottom:1px solid var(--line)">{bookA.title}</th>
+          <th style="text-align:left; padding:14px 12px; font-family:var(--serif); font-size:15px; font-weight:400; border-bottom:1px solid var(--line)">{bookB.title}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row) => (
+          <tr>
+            <td style="padding:16px 12px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); border-bottom:1px solid var(--line); vertical-align:top">{row.dimension}</td>
+            <td style="padding:16px 12px; color:var(--ink-soft); border-bottom:1px solid var(--line); vertical-align:top">{row.a}</td>
+            <td style="padding:16px 12px; color:var(--ink-soft); border-bottom:1px solid var(--line); vertical-align:top">{row.b}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  {verdict && (
+    <div style="max-width:720px; margin:40px auto 0; padding:40px 0; border-top:1px solid var(--line); text-align:center">
+      <div class="kicker" style="margin-bottom:14px">The Verdict</div>
+      <p style="font-size:15px; color:var(--ink-soft); line-height:1.6">{verdict}</p>
+    </div>
+  )}
+</section>
+
+<style>
+  @media (max-width:760px) {
+    .compare-books {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

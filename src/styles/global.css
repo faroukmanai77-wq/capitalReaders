@@ -86,15 +86,20 @@ img{max-width:100%;display:block}
 .buy-btn-outline:hover{border-color:var(--accent);color:var(--accent)}
 
 @media (max-width:760px){
-  .intro h1{font-size:29px}
-  .book-row{grid-template-columns:40px 100px 1fr}
-  .cover{width:100px;height:150px}
-  .related-grid{grid-template-columns:1fr}
-  .footer-wrap{grid-template-columns:1fr 1fr}
-  .expert-strip{flex-direction:column;gap:10px}
-  .main-nav{gap:16px;flex-wrap:wrap;justify-content:flex-end}
-  .faq-grid{grid-template-columns:1fr}
-  .nav-wrap{flex-wrap:wrap}
+  /* !important is required here: these elements also carry inline
+     style="" attributes (matching the original design prototype's
+     markup convention), and an inline style always outranks a class
+     selector's specificity — without !important these rules are
+     silently never applied, and the page overflows horizontally. */
+  .intro h1{font-size:29px !important}
+  .book-row{grid-template-columns:40px 100px minmax(0,1fr) !important}
+  .cover{width:100px !important;height:150px !important}
+  .related-grid{grid-template-columns:1fr !important}
+  .footer-wrap{grid-template-columns:1fr 1fr !important}
+  .expert-strip{flex-direction:column !important;gap:10px !important}
+  .main-nav{gap:16px !important;flex-wrap:wrap !important;justify-content:flex-end !important}
+  .faq-grid{grid-template-columns:1fr !important}
+  .nav-wrap{flex-wrap:wrap !important}
 }
 
 @media (max-width:480px){

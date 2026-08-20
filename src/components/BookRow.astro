@@ -33,7 +33,7 @@ const bookshop = bookshopUrl(book.title, book.bookshopUrl);
 
 <article
   class="book-row"
-  style={`display:grid; grid-template-columns:56px 130px 1fr; gap:26px; padding:${isFirst ? '0' : '30px'} 0 30px; border-bottom:1px solid var(--line); align-items:start`}
+  style={`display:grid; grid-template-columns:56px 130px minmax(0,1fr); gap:26px; padding:${isFirst ? '0' : '30px'} 0 30px; border-bottom:1px solid var(--line); align-items:start`}
 >
   <div aria-hidden="true" style="font-family:var(--serif); font-size:30px; color:var(--rank); font-weight:700; line-height:1">
     {rankLabel(index)}
@@ -62,21 +62,21 @@ const bookshop = bookshopUrl(book.title, book.bookshopUrl);
     </div>
   )}
 
-  <div>
+  <div style="min-width:0">
     <Heading style="font-family:var(--serif); font-size:19px; font-weight:400; margin-bottom:4px">{book.title}</Heading>
     <div style="font-size:12.5px; color:var(--ink-soft); margin-bottom:12px; letter-spacing:.02em">by {book.author} · {book.published}</div>
     <p style="font-size:14px; color:var(--ink-soft); margin-bottom:14px; max-width:60ch">{book.blurb}</p>
 
     <dl style="display:grid; gap:8px; margin-bottom:16px; max-width:60ch">
-      <div style="display:grid; grid-template-columns:96px 1fr; gap:12px; align-items:baseline">
+      <div style="display:grid; grid-template-columns:96px minmax(0,1fr); gap:12px; align-items:baseline">
         <dt style="font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--accent)">Core idea</dt>
         <dd style="font-size:13.5px; color:var(--ink-soft)">{book.keyIdea}</dd>
       </div>
-      <div style="display:grid; grid-template-columns:96px 1fr; gap:12px; align-items:baseline">
+      <div style="display:grid; grid-template-columns:96px minmax(0,1fr); gap:12px; align-items:baseline">
         <dt style="font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--accent)">Read it if</dt>
         <dd style="font-size:13.5px; color:var(--ink-soft)">{book.bestFor}</dd>
       </div>
-      <div style="display:grid; grid-template-columns:96px 1fr; gap:12px; align-items:baseline">
+      <div style="display:grid; grid-template-columns:96px minmax(0,1fr); gap:12px; align-items:baseline">
         <dt style="font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--accent)">Skip it if</dt>
         <dd style="font-size:13.5px; color:var(--ink-soft)">{book.skipIf}</dd>
       </div>

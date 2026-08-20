@@ -20,6 +20,7 @@ export interface BuildGraphOptions {
   image?: string;
   breadcrumbs?: BreadcrumbItem[];
   itemList?: { name: string; description: string; books: SchemaBook[] };
+  bookReview?: { title: string; author: string; reviewBody: string };
   faq?: { q: string; a: string }[];
   isSearchPage?: boolean;
 }
@@ -75,6 +76,15 @@ export function buildGraph(opts: BuildGraphOptions) {
           review: { '@type': 'Review', reviewBody: b.blurb, author },
         },
       })),
+    });
+  }
+
+  if (opts.bookReview) {
+    graph.push({
+      '@type': 'Book',
+      name: opts.bookReview.title,
+      author: { '@type': 'Person', name: opts.bookReview.author },
+      review: { '@type': 'Review', reviewBody: opts.bookReview.reviewBody, author },
     });
   }
 

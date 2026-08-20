@@ -9,112 +9,181 @@ import PullQuote from '../components/PullQuote.astro';
 import MethodAndFaq from '../components/MethodAndFaq.astro';
 import RelatedLists from '../components/RelatedLists.astro';
 import PillarLink from '../components/PillarLink.astro';
+import Takeaways from '../components/Takeaways.astro';
+import ComparisonTable from '../components/ComparisonTable.astro';
+import GuideBookCard from '../components/GuideBookCard.astro';
 import { buildGraph } from '../lib/schema';
-import { SITE } from '../config';
 
 export async function getStaticPaths() {
   const lists = await getCollection('lists');
   const guides = await getCollection('guides');
-  return lists.map((entry) => ({
+  const listPaths = lists.map((entry) => ({
     params: { slug: entry.data.path },
-    props: { entry, allLists: lists, allGuides: guides },
+    props: { kind: 'list' as const, entry, allLists: lists, allGuides: guides },
   }));
+  const guidePaths = guides.map((entry) => ({
+    params: { slug: entry.data.path },
+    props: { kind: 'guide' as const, entry, allLists: lists, allGuides: guides },
+  }));
+  return [...listPaths, ...guidePaths];
 }
 
-const { entry, allLists, allGuides } = Astro.props;
-const list = entry.data;
+const { kind, entry, allLists, allGuides } = Astro.props;
 
 // A "hub" is any list with no pillarPath of its own — currently Investing,
 // Wealth, Economics, and Personal Finance. The "More Reading Lists" strip
 // only ever shows hubs (never sub-topics), and always excludes this page's
-// own pillar hub so it isn't linked twice on a sub-topic page.
+// own pillar hub so it isn't linked twice on a sub-topic/guide page.
 const hubs = allLists.filter((l) => !l.data.pillarPath);
-const related = hubs.filter((h) => h.id !== entry.id && h.data.path !== list.pillarPath).slice(0, 3);
 
-// Sub-topics: any list or guide whose pillarPath points back at this page.
-// Computed, not hand-linked, so adding a new child never touches this file.
-const subTopics = [
-  ...allLists.filter((l) => l.data.pillarPath === list.path),
-  ...allGuides.filter((g) => g.data.pillarPath === list.path),
-];
-
-const parentHub = list.pillarPath ? hubs.find((h) => h.data.path === list.pillarPath) : undefined;
+const data = entry.data;
+const pillarPath = 'pillarPath' in data ? data.pillarPath : undefined;
+const parentHub = pillarPath ? hubs.find((h) => h.data.path === pillarPath) : undefined;
+const related = hubs.filter((h) => h.id !== entry.id && h.data.path !== pillarPath).slice(0, 3);
 
 const crumbs = [
   { label: 'Home', href: '/' },
-  { label: list.category, href: `/${list.path}` },
+  { label: data.category, href: `/${data.path}` },
 ];
 
-const updatedIso = list.updated.toISOString().slice(0, 10);
-
-const jsonLd = buildGraph({
-  pageTitle: list.seo.title,
-  dateModified: updatedIso,
-  path: `/${list.path}`,
-  breadcrumbs: [
-    { name: 'Home', path: '/' },
-    { name: list.category, path: `/${list.path}` },
-    { name: list.listKicker, path: `/${list.path}` },
-  ],
-  itemList: {
-    name: list.listTitle,
-    description: list.seo.description,
-    books: list.books,
-  },
-  faq: list.faq,
-});
+const updatedIso = data.updated.toISOString().slice(0, 10);
 ---
 
-<BaseLayout
-  title={list.seo.title}
-  description={list.seo.description}
-  ogImage={list.seo.ogImage}
-  currentPath={`/${list.path}`}
-  jsonLd={jsonLd}
->
-  <main>
-    <Breadcrumb crumbs={crumbs} current={list.listKicker} />
-    {parentHub && <PillarLink hubTitle={parentHub.data.listKicker} hubHref={`/${parentHub.data.path}`} />}
-    <Hero kicker={list.kicker} title={list.title} intro={list.intro} />
-    <AuthorByline updated={list.updated} />
+{kind === 'list' && (() => {
+  const list = data as Extract<typeof data, { books: unknown }>;
 
-    <section style="max-width:900px; margin:0 auto; padding:52px 28px 0">
-      <div style="margin-bottom:34px">
-        <div class="kicker" style="margin-bottom:10px">{list.listKicker}</div>
-        <h2 style="font-family:var(--serif); font-size:28px; font-weight:400; margin-bottom:12px">{list.listTitle}</h2>
-        <p style="font-size:14.5px; color:var(--ink-soft); max-width:64ch">{list.listStandfirst}</p>
-      </div>
+  // Sub-topics: any list or guide whose pillarPath points back at this page.
+  // Computed, not hand-linked, so adding a new child never touches this file.
+  const subTopics = [
+    ...allLists.filter((l) => l.data.pillarPath === list.path),
+    ...allGuides.filter((g) => g.data.pillarPath === list.path),
+  ];
 
-      {list.books
-        .sort((a, b) => a.rank - b.rank)
-        .map((book, i) => <BookRow book={book} index={i} headingLevel="h3" isFirst={i === 0} />)}
-    </section>
+  const jsonLd = buildGraph({
+    pageTitle: list.seo.title,
+    dateModified: updatedIso,
+    path: `/${list.path}`,
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: list.category, path: `/${list.path}` },
+      { name: list.listKicker, path: `/${list.path}` },
+    ],
+    itemList: {
+      name: list.listTitle,
+      description: list.seo.description,
+      books: list.books,
+    },
+    faq: list.faq,
+  });
 
-    <PullQuote quote={list.quote} source={list.quoteSource} />
+  return (
+    <BaseLayout
+      title={list.seo.title}
+      description={list.seo.description}
+      ogImage={list.seo.ogImage}
+      currentPath={`/${list.path}`}
+      jsonLd={jsonLd}
+    >
+      <main>
+        <Breadcrumb crumbs={crumbs} current={list.listKicker} />
+        {parentHub && <PillarLink hubTitle={parentHub.data.listKicker} hubHref={`/${parentHub.data.path}`} />}
+        <Hero kicker={list.kicker} title={list.title} intro={list.intro} />
+        <AuthorByline updated={list.updated} />
 
-    <MethodAndFaq methodTitle={list.methodTitle} methodBody={list.methodBody} faq={list.faq} />
+        <section style="max-width:900px; margin:0 auto; padding:52px 28px 0">
+          <div style="margin-bottom:34px">
+            <div class="kicker" style="margin-bottom:10px">{list.listKicker}</div>
+            <h2 style="font-family:var(--serif); font-size:28px; font-weight:400; margin-bottom:12px">{list.listTitle}</h2>
+            <p style="font-size:14.5px; color:var(--ink-soft); max-width:64ch">{list.listStandfirst}</p>
+          </div>
 
-    {subTopics.length > 0 && (
-      <RelatedLists
-        heading="Explore This Topic Further"
-        viewAllHref={`/${list.path}`}
-        viewAllLabel="Back to This List →"
-        lists={subTopics.map((s) => ({
-          kicker: s.data.category,
-          cardTitle: s.data.title,
-          cardSummary: s.data.intro,
-          href: `/${s.data.path}`,
-        }))}
-      />
-    )}
+          {list.books
+            .sort((a, b) => a.rank - b.rank)
+            .map((book, i) => <BookRow book={book} index={i} headingLevel="h3" isFirst={i === 0} />)}
+        </section>
 
-    <RelatedLists
-      lists={related.map((r) => ({
-        kicker: r.data.category,
-        cardTitle: r.data.cardTitle,
-        cardSummary: r.data.cardSummary,
-        href: `/${r.data.path}`,
-      }))}
-    />
-  </main>
-</BaseLayout>
+        <PullQuote quote={list.quote} source={list.quoteSource} />
+
+        <MethodAndFaq methodTitle={list.methodTitle} methodBody={list.methodBody} faq={list.faq} />
+
+        {subTopics.length > 0 && (
+          <RelatedLists
+            heading="Explore This Topic Further"
+            viewAllHref={`/${list.path}`}
+            viewAllLabel="Back to This List →"
+            lists={subTopics.map((s) => ({
+              kicker: s.data.category,
+              cardTitle: s.data.title,
+              cardSummary: s.data.intro,
+              href: `/${s.data.path}`,
+            }))}
+          />
+        )}
+
+        <RelatedLists
+          lists={related.map((r) => ({
+            kicker: r.data.category,
+            cardTitle: r.data.cardTitle,
+            cardSummary: r.data.cardSummary,
+            href: `/${r.data.path}`,
+          }))}
+        />
+      </main>
+    </BaseLayout>
+  );
+})()}
+
+{kind === 'guide' && (() => {
+  const guide = data as Extract<typeof data, { format: string }>;
+
+  const jsonLd = buildGraph({
+    pageTitle: guide.seo.title,
+    dateModified: updatedIso,
+    path: `/${guide.path}`,
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: guide.category, path: `/${guide.path}` },
+      { name: guide.title, path: `/${guide.path}` },
+    ],
+    bookReview:
+      guide.format === 'deepdive' && guide.book
+        ? { title: guide.book.title, author: guide.book.author, reviewBody: guide.intro }
+        : undefined,
+  });
+
+  return (
+    <BaseLayout
+      title={guide.seo.title}
+      description={guide.seo.description}
+      currentPath={`/${guide.path}`}
+      jsonLd={jsonLd}
+    >
+      <main>
+        <Breadcrumb crumbs={crumbs} current={guide.title} />
+        {parentHub && <PillarLink hubTitle={parentHub.data.listKicker} hubHref={`/${parentHub.data.path}`} />}
+        <Hero kicker={guide.kicker} title={guide.title} intro={guide.intro} />
+        <AuthorByline updated={guide.updated} />
+
+        {guide.format === 'deepdive' && guide.book && guide.takeaways && (
+          <>
+            <GuideBookCard book={guide.book} />
+            <Takeaways items={guide.takeaways} />
+          </>
+        )}
+
+        {guide.format === 'comparison' && guide.bookA && guide.bookB && guide.comparisonRows && (
+          <ComparisonTable bookA={guide.bookA} bookB={guide.bookB} rows={guide.comparisonRows} verdict={guide.verdict} />
+        )}
+
+        <RelatedLists
+          lists={related.map((r) => ({
+            kicker: r.data.category,
+            cardTitle: r.data.cardTitle,
+            cardSummary: r.data.cardSummary,
+            href: `/${r.data.path}`,
+          }))}
+        />
+      </main>
+    </BaseLayout>
+  );
+})()}

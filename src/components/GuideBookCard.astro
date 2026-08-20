@@ -1,0 +1,70 @@
+---
+import { amazonUrl, bookshopUrl, coverAlt, gradientFor } from '../lib/affiliate';
+import { SITE } from '../config';
+
+interface Book {
+  title: string;
+  author: string;
+  coverImageUrl?: string;
+  amazonUrl?: string;
+  bookshopUrl?: string;
+}
+
+interface Props {
+  book: Book;
+}
+
+const { book } = Astro.props;
+const alt = coverAlt(book.title, book.author);
+const gradient = gradientFor(0);
+const amazon = amazonUrl(book.title, book.author, book.amazonUrl);
+const bookshop = bookshopUrl(book.title, book.bookshopUrl);
+---
+
+<section style="max-width:900px; margin:0 auto; padding:52px 28px 0">
+  <div class="guide-book-card" style="display:grid; grid-template-columns:150px minmax(0,1fr); gap:26px; align-items:start; padding-bottom:30px; border-bottom:1px solid var(--line)">
+    {book.coverImageUrl ? (
+      <img
+        src={book.coverImageUrl}
+        alt={alt}
+        width="150"
+        height="219"
+        loading="eager"
+        decoding="async"
+        style="width:150px; height:219px; border-radius:2px; box-shadow:0 10px 22px -10px rgba(26,26,24,.35); object-fit:cover; display:block"
+      />
+    ) : (
+      <div
+        role="img"
+        aria-label={alt}
+        style={`width:150px; height:219px; border-radius:2px; box-shadow:0 10px 22px -10px rgba(26,26,24,.35); display:flex; flex-direction:column; justify-content:space-between; padding:16px 14px; color:#fff; background:${gradient}`}
+      >
+        <div style="font-family:var(--serif); font-size:15px; font-weight:700; line-height:1.25">{book.title}</div>
+        <div style="font-size:10.5px; opacity:.85; letter-spacing:.02em">{book.author}</div>
+      </div>
+    )}
+    <div>
+      <h2 style="font-family:var(--serif); font-size:22px; font-weight:400; margin-bottom:4px">{book.title}</h2>
+      <div style="font-size:13px; color:var(--ink-soft); margin-bottom:20px">by {book.author}</div>
+      <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap">
+        <a href={amazon} target="_blank" rel="sponsored noopener" class="buy-btn">Buy on Amazon</a>
+        {SITE.showBookshop && (
+          <a href={bookshop} target="_blank" rel="sponsored noopener" class="buy-btn-outline">Bookshop.org</a>
+        )}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 760px) {
+    .guide-book-card {
+      grid-template-columns: 100px minmax(0, 1fr);
+    }
+    .guide-book-card img,
+    .guide-book-card [role='img'] {
+      width: 100px !important;
+      height: 146px !important;
+    }
+  }
+</style>

@@ -1,0 +1,28 @@
+---
+interface Item {
+  title: string;
+  body: string;
+}
+
+interface Props {
+  items: Item[];
+}
+
+const { items } = Astro.props;
+
+function numeral(i: number): string {
+  return String(i + 1).padStart(2, '0');
+}
+---
+
+<section style="max-width:900px; margin:0 auto; padding:0 28px 52px">
+  {items.map((item, i) => (
+    <article style={`display:grid; grid-template-columns:56px 1fr; gap:26px; padding:${i === 0 ? '30px' : '30px'} 0; border-bottom:1px solid var(--line); align-items:start`}>
+      <div aria-hidden="true" style="font-family:var(--serif); font-size:30px; color:var(--rank); font-weight:700; line-height:1">{numeral(i)}</div>
+      <div>
+        <h3 style="font-family:var(--serif); font-size:19px; font-weight:400; margin-bottom:8px">{item.title}</h3>
+        <p style="font-size:14px; color:var(--ink-soft); max-width:64ch">{item.body}</p>
+      </div>
+    </article>
+  ))}
+</section>

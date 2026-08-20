@@ -1,0 +1,41 @@
+{
+  "path": "investing/the-intelligent-investor-5-key-takeaways",
+  "format": "deepdive",
+  "pillarPath": "investing/best-books-on-investing",
+  "category": "Investing",
+  "kicker": "Curated Reading on Money, Wealth & Economics",
+  "title": "The Intelligent Investor: 5 Key Takeaways",
+  "intro": "Benjamin Graham's 1949 book tops our investing list, but it's dense enough that most readers finish it without a clear sense of what to actually remember. These are the five ideas worth carrying with you — not a summary of every chapter, just the parts that change how you make decisions.",
+  "updated": "2026-08-19",
+  "seo": {
+    "title": "The Intelligent Investor: 5 Key Takeaways",
+    "description": "The five ideas from Benjamin Graham's The Intelligent Investor actually worth remembering — margin of safety, Mr. Market, and more."
+  },
+  "book": {
+    "title": "The Intelligent Investor",
+    "author": "Benjamin Graham",
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/36434-L.jpg"
+  },
+  "takeaways": [
+    {
+      "title": "Mr. Market is a business partner, not a boss",
+      "body": "Graham's central allegory: imagine a manic partner named Mr. Market who shows up every day offering to buy your shares or sell you his, at a price that swings from wildly optimistic to needlessly pessimistic. His mood tells you nothing about the business's actual value, and you're never obligated to trade with him. The lesson isn't to ignore prices — it's to stop assuming they're rational."
+    },
+    {
+      "title": "Margin of safety is the whole strategy, compressed",
+      "body": "If the book has one idea worth remembering after everything else fades, it's this: buy at a price meaningfully below your estimate of intrinsic value, so you're protected even if your analysis is wrong or the future turns out worse than expected. Margin of safety isn't a hedge against bad luck — it's an admission that your own judgment has an error bar."
+    },
+    {
+      "title": "Decide which kind of investor you are, and commit",
+      "body": "Graham splits readers into two legitimate paths: the defensive investor, who wants a passive, low-effort portfolio and accepts a correspondingly average return, and the enterprising investor, willing to do the analytical work for a shot at doing better. His sharpest warning is against the investor who splits the difference — defensive-level effort paired with enterprising-level risk."
+    },
+    {
+      "title": "Investing and speculating are different activities, not different attitudes",
+      "body": "Graham draws a hard line: an investment operation is one that, after thorough analysis, promises safety of principal and an adequate return. Everything else is speculation, regardless of how confident you feel or how much research you did. The distinction matters because most financial losses come from speculation mistaken for investing, not from investing that simply went wrong."
+    },
+    {
+      "title": "Your biggest risk is yourself, not the market",
+      "body": "Graham returns repeatedly to a point later investors would spend decades proving with data: an investor's chief enemy is likely to be himself, not the market. Panic-selling in a downturn or chasing a rally does more damage than any single bad stock pick. The book's real argument is that temperament, not analytical skill, separates investors who do well from those who don't."
+    }
+  ]
+}
